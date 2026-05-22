@@ -121,6 +121,40 @@ test('开源说明应包含 V3.0 启动地址与待办清单', () => {
   assert.ok(changelog.includes('闪图 Fdesign V3.0'));
 });
 
+test('公开介绍应包含产品截图，且截图文件进入 public 资产', () => {
+  const readme = readText('README.md');
+  const screenshotPath = 'public/screenshots/fdesign-workbench-showcase.png';
+  const screenshot = fs.readFileSync(path.resolve(process.cwd(), screenshotPath));
+
+  assert.ok(readme.includes('## 产品截图'));
+  assert.ok(readme.includes('./public/screenshots/fdesign-workbench-showcase.png'));
+  assert.equal(fileExists(screenshotPath), true);
+  assert.equal(screenshot.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+});
+
+test('前端入口应按路由拆包并为重依赖配置稳定 chunk', () => {
+  const app = readText('src/App.jsx');
+  const viteConfig = readText('vite.config.js');
+
+  assert.ok(app.includes('lazy('));
+  assert.ok(app.includes('<Suspense'));
+  [
+    "import WorkbenchPage from './pages/WorkbenchPage'",
+    "import AdminPage from './pages/AdminPage'",
+    "import PsdAutoFillTab from './pages/Workbench/PsdAutoFillTab'",
+    "import BatchProductImageTab from './pages/Workbench/BatchProductImageTab'",
+    "import CutoutNoPsdTab from './pages/Workbench/CutoutNoPsdTab'",
+  ].forEach((staticImport) => {
+    assert.equal(app.includes(staticImport), false, `${staticImport} 不应再静态进入主包`);
+  });
+
+  assert.ok(viteConfig.includes('manualChunks'));
+  assert.ok(viteConfig.includes('react-vendor'));
+  assert.ok(viteConfig.includes('psd-vendor'));
+  assert.ok(viteConfig.includes('spreadsheet-vendor'));
+  assert.ok(viteConfig.includes('canvas-vendor'));
+});
+
 test('发布启动脚本必须使用 CRLF 换行，避免双击闪退', () => {
   const filePath = path.resolve(process.cwd(), 'start_release.bat');
   const content = fs.readFileSync(filePath);

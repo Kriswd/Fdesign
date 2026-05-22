@@ -283,6 +283,12 @@
   - 脚本内禁止静默启动 Node（如 `start /b`），必须在当前窗口前台运行并输出日志，出错时必须 `pause` 暴露 `ERRORLEVEL`。
 - **发包前置校验**：必须通过 `npm run lint` 与 `npm run build`。
 
+### 8.5 前端构建拆包约定
+
+- 应用入口 `src/App.jsx` 采用路由级 `lazy`/`Suspense` 加载，工作台、管理端和兼容 `/slot` 入口按页面异步加载，避免把 PSD、Excel 与画布依赖全部塞进首屏主包。
+- `vite.config.js` 通过 `manualChunks` 固定重依赖分组：`react-vendor`、`psd-vendor`、`spreadsheet-vendor`、`canvas-vendor`、`ui-vendor`、`export-vendor`。新增大体积库时应优先评估是否归入现有分组或拆成独立异步 chunk。
+- 公开 README 的产品截图来自 `public/screenshots/fdesign-workbench-showcase.png`，截图需展示真实工作流且不得带旧版本号或内部发布信息。
+
 ---
 
 ## 9. 当前架构边界

@@ -2,6 +2,12 @@
 
 闪图 Fdesign 是一个基于 React、Node.js 与 Photoshop 自动化的 PSD 图像生产工作台，覆盖模板解析、变量绑定、批量替换、成品导出与任务模板管理。
 
+## 产品截图
+
+![闪图 Fdesign 工作台](./public/screenshots/fdesign-workbench-showcase.png)
+
+上图展示 PSD 画布预览、商品位绑定、Excel 数据控制台与导出入口的主工作流。
+
 ## 能力概览
 
 - 在浏览器中解析 PSD 模板并管理可替换变量。

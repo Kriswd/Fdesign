@@ -9,3 +9,5 @@ Change: Prepare V3.0 branding and open-source readiness
 - Add MIT `LICENSE`, `.env.example`, `CONTRIBUTING.md`, `SECURITY.md`, and package repository metadata for the public repository.
 - Refresh audit-fixable dependency locks and move SheetJS `xlsx` to the official 0.20.3 tarball source used by the public dependency tree.
 - Publish through a sanitized public history so prior private workspace materials are not exposed by a repository visibility flip.
+- Add a cropped product workflow screenshot to the public README so the project introduction shows the actual canvas, binding, and data-console workflow instead of an empty state.
+- Split the React entry with route-level `lazy`/`Suspense` loading and add stable Vite `manualChunks` buckets for React, PSD parsing, spreadsheet, canvas, UI, and export dependencies.
