@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: #F5F5F7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: min-content;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+}
+
+.bento-card {
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden; /* 默认隐藏溢出，防止内容撑破圆角 */
+  transition: all 0.3s ease;
+  /* height: 100%;  <-- Removed to prevent layout conflicts in stacked contexts */
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-wrapper {
+  background: #FFFFFF;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.drop-zone {
+  border: 2px dashed #D1D1D6;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.psd-canvas-container {
+  position: relative;
+  background: #FFFFFF !important;
+}
+
+.psd-canvas {
+  position: relative;
+  background: #FFFFFF !important;
+}
+
+.layers-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+}
+
+.text-layer {
+  background: transparent !important;
+  padding: 0;
+  margin: 0;
+}
+
+.text-layer-content {
+  background: transparent !important;
+}
+
+.shape-layer {
+  background: transparent;
+  border: none;
+}
+
+.shape-layer.debug-bounds {
+  background: rgba(200, 200, 200, 0.08);
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
+.image-layer-container {
+  background: #FFFFFF !important;
+}
+
+.layer-item.is-selected {
+  outline: 2px solid rgba(0, 122, 255, 0.75);
+  outline-offset: 2px;
+}
+
+.layer-item.is-bound {
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.65) inset;
+}
+
+.image-placeholder {
+  background: #F5F5F7 !important;
+  border: 2px dashed #D1D1D6 !important;
+}
+
+.layer-group {
+  background: transparent !important;
+}
+
+.drop-zone:hover,
+.drop-zone.drag-over {
+  border-color: #007AFF;
+  background: rgba(0, 122, 255, 0.05);
+}
+
+.field-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB; /* gray-200 */
+  border-radius: 6px; /* rounded-md */
+  padding: 4px 8px; /* Compact padding */
+  font-size: 12px;
+  color: #374151; /* gray-700 */
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.field-chip:hover {
+  border-color: #93C5FD; /* blue-300 */
+  color: #2563EB; /* blue-600 */
+  background: #F8FAFC; /* slate-50 */
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.field-chip.active,
+.field-chip.primary-key {
+  background: #EFF6FF; /* blue-50 */
+  border-color: #BFDBFE; /* blue-200 */
+  color: #1D4ED8; /* blue-700 */
+  font-weight: 500;
+}
+
+/* Remove button specific adjustment inside chip */
+.field-chip .remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  color: #9CA3AF;
+  transition: all 0.2s;
+  margin-left: 2px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.field-chip .remove-btn:hover {
+  background: #FEE2E2; /* red-100 */
+  color: #DC2626; /* red-600 */
+}
+
+.slice-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #007AFF 50%, transparent 100%);
+  border-top: 1px dashed #007AFF;
+}
+
+.layer-text {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.layer-text:hover {
+  outline: 2px solid #007AFF;
+  outline-offset: 2px;
+}
+
+.layer-text.selected {
+  outline: 2px solid #007AFF;
+  outline-offset: 2px;
+  background: rgba(0, 122, 255, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid #007AFF;
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+/* Custom Scrollbar for Bento Cards */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Grid span utilities */
+.col-span-1 { grid-column: span 1 / span 1; }
+.col-span-2 { grid-column: span 2 / span 2; }
+.col-span-3 { grid-column: span 3 / span 3; }
+.col-span-4 { grid-column: span 4 / span 4; }
+
+.row-span-1 { grid-row: span 1 / span 1; }
+.row-span-2 { grid-row: span 2 / span 2; }
+.row-span-3 { grid-row: span 3 / span 3; }
+.row-span-4 { grid-row: span 4 / span 4; }
+
+.hover\:bg-blue-600:hover { --tw-bg-opacity: 1; background-color: rgb(37 99 235 / var(--tw-bg-opacity)); }
+
+/* Selecto Selection Box Style (Glassmorphism + Bento) */
+.selecto-selection {
+  background-color: rgba(56, 189, 248, 0.1) !important;
+  border: 1px solid rgba(56, 189, 248, 0.6) !important;
+  border-radius: 6px !important;
+  z-index: 9999 !important;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15) !important;
+  backdrop-filter: blur(2px);
+}

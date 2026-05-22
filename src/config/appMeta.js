@@ -1,0 +1,9 @@
+export const APP_VERSION = '3.0';
+export const APP_VERSION_LABEL = 'V3.0';
+export const APP_NAME = '闪图';
+export const APP_PRODUCT_NAME = '闪图 Fdesign';
+export const APP_DISPLAY_NAME = `${APP_PRODUCT_NAME} ${APP_VERSION_LABEL}`;
+export const APP_TITLE_DEFAULT = `${APP_NAME} ${APP_VERSION_LABEL}`;
+export const APP_TITLE_BOOT_FAILED = `${APP_TITLE_DEFAULT} - 启动失败`;
+export const APP_TITLE_CRASH = `${APP_TITLE_DEFAULT} - 页面崩溃`;
+export const APP_LOGO_SRC = '/fdesign-logo.svg';

@@ -1,0 +1,71 @@
+{
+  "name": "psd-to-ecommerce-new",
+  "private": false,
+  "version": "3.0",
+  "description": "Photoshop-powered PSD automation workbench for ecommerce image production.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kriswd/Fdesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kriswd/Fdesign/issues"
+  },
+  "homepage": "https://github.com/Kriswd/Fdesign#readme",
+  "keywords": [
+    "photoshop",
+    "psd",
+    "ecommerce",
+    "image-automation",
+    "react"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3010",
+    "server": "node --watch server/index.js",
+    "build": "vite build",
+    "lint": "eslint .",
+    "test": "node --test scripts/node-tests.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 3010"
+  },
+  "dependencies": {
+    "ag-psd": "^29.0.0",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "events": "^3.3.0",
+    "express": "^5.2.1",
+    "html-to-image": "^1.11.13",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.562.0",
+    "multer": "^2.1.1",
+    "node-schedule": "^2.1.1",
+    "process": "^0.11.10",
+    "puppeteer": "^24.35.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-moveable": "^0.56.0",
+    "react-router-dom": "^7.12.0",
+    "react-selecto": "^1.26.3",
+    "react-xarrows": "^2.0.2",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "sharp": "^0.34.5",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "framer-motion": "^12.26.2",
+    "globals": "^16.5.0",
+    "lucide-react": "^0.562.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.1",
+    "vite": "^7.3.3"
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/fdesign-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>闪图 V3.0</title>
+  </head>
+  <body translate="no">
+    <div id="root"></div>
+    <script type="module">
+      import('/src/main.jsx').catch((error) => {
+        try {
+          document.title = '闪图 V3.0 - 启动失败';
+          const msg = error && error.message ? String(error.message) : String(error);
+          const stack = error && error.stack ? String(error.stack) : '';
+          const root = document.getElementById('root');
+          if (root) {
+            root.innerHTML = `
+              <div style="min-height:60vh;display:flex;align-items:center;justify-content:center;padding:24px;">
+                <div style="max-width:960px;width:100%;background:#0b1220;border:1px solid rgba(244,63,94,0.35);border-radius:16px;padding:18px;color:#e5e7eb;">
+                  <div style="font-weight:700;color:#fda4af;font-size:16px;">页面启动失败（已阻止白屏）</div>
+                  <div style="margin-top:8px;color:#cbd5e1;font-size:12px;">请复制下面错误信息发我，我会按堆栈定位根因。</div>
+                  <pre style="margin-top:12px;white-space:pre-wrap;word-break:break-word;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px;color:#fecaca;font-size:12px;line-height:1.4;">${msg}${stack ? `\n\n${stack}` : ''}</pre>
+                  <div style="margin-top:12px;display:flex;gap:10px;">
+                    <button onclick="window.location.reload()" style="padding:8px 12px;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:#e5e7eb;cursor:pointer;">刷新页面</button>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+          console.error('[bootstrap]', error);
+        } catch (e) {
+          void e;
+        }
+      });
+    </script>
+  </body>
+</html>
