@@ -14,8 +14,8 @@
 
 ## 店铺入口配置
 
-- 若需要在首页顶部展示店铺选购入口，只能通过 `VITE_SHOP_URL` 和 `VITE_SHOP_LINK_LABEL` 配置；公开仓库不得硬编码私有店铺链接。
-- `VITE_SHOP_URL` 留空或不是 `http(s)` 地址时，前端会自动隐藏选购入口。
+- 首页顶部默认展示公开店铺选购入口：`https://pay.ldxp.cn/shop/FTIWLFHQ`。
+- 如需更换店铺地址，通过 `VITE_SHOP_URL` 和 `VITE_SHOP_LINK_LABEL` 配置；`VITE_SHOP_URL` 不是 `http(s)` 地址时，前端会自动隐藏选购入口。
 
 ## 开源前必须确认
 

@@ -18,7 +18,7 @@
 - 新增 MIT `LICENSE`、`.env.example`、`CONTRIBUTING.md`、`SECURITY.md` 与 `docs/OPEN_SOURCE_CHECKLIST.md`。
 - 更新 README 的项目定位、开发端口、健康检查地址、运行依赖与验证命令。
 - 移除不适合进入公开树的策划资料、内部发布资料、临时工作目录、备份与二进制调试痕迹。
-- 首页顶部支持通过 `VITE_SHOP_URL` 配置店铺选购入口，公开代码默认不硬编码私有店铺链接。
+- 首页顶部默认展示公开店铺选购入口 `https://pay.ldxp.cn/shop/FTIWLFHQ`，并支持通过 `VITE_SHOP_URL` 覆盖。
 
 ## 4. 依赖审计
 

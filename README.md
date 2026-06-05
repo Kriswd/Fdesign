@@ -40,14 +40,14 @@ npm run dev
 
 ## 店铺入口
 
-首页顶部支持展示“选购服务”入口。公开仓库不会硬编码私有店铺地址，部署或发布前在环境变量中配置即可：
+首页顶部默认展示“选购服务”入口，指向公开店铺：
 
 ```env
-VITE_SHOP_URL=https://your-shop.example
+VITE_SHOP_URL=https://pay.ldxp.cn/shop/FTIWLFHQ
 VITE_SHOP_LINK_LABEL=选购服务
 ```
 
-未设置 `VITE_SHOP_URL` 时，顶部店铺入口会自动隐藏，避免开源版本误导用户访问错误链接。
+如需替换入口地址，可在部署环境中覆盖 `VITE_SHOP_URL`；设置为非 `http(s)` 地址时，顶部店铺入口会自动隐藏。
 
 ## 目录
 
