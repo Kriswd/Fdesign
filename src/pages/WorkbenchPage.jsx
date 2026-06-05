@@ -6,6 +6,7 @@ import DataConsole from '../components/DataConsole';
 import { useDataStore, buildSlotUpdates } from '../store/dataStore';
 import HudEditor from '../components/HudEditor';
 import BrandLogo from '../components/BrandLogo';
+import ShopLinkButton from '../components/ShopLinkButton';
 import { APP_DISPLAY_NAME } from '../config/appMeta';
 import PSDParser from '../utils/psdParser';
 import { extractTemplateFromPsd, buildVariablesFromCandidates, filterVariablesByLayerRules } from '../utils/templateExtractor';
@@ -890,7 +891,7 @@ export default function WorkbenchPage() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-             {/* User Actions Placeholder */}
+            <ShopLinkButton />
           </div>
         </div>
       </header>

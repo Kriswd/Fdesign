@@ -7,3 +7,7 @@ export const APP_TITLE_DEFAULT = `${APP_NAME} ${APP_VERSION_LABEL}`;
 export const APP_TITLE_BOOT_FAILED = `${APP_TITLE_DEFAULT} - 启动失败`;
 export const APP_TITLE_CRASH = `${APP_TITLE_DEFAULT} - 页面崩溃`;
 export const APP_LOGO_SRC = '/fdesign-logo.svg';
+export const APP_SHOP_URL = (import.meta.env.VITE_SHOP_URL || '').trim();
+export const APP_SHOP_LINK_LABEL = (import.meta.env.VITE_SHOP_LINK_LABEL || '选购服务').trim() || '选购服务';
+export const APP_SHOP_LINK_TITLE = '打开店铺选购配套服务';
+export const APP_SHOP_LINK_ENABLED = /^https?:\/\//i.test(APP_SHOP_URL);

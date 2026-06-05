@@ -38,6 +38,17 @@ npm run dev
 
 后端读取当前 shell 中的环境变量；前端本地变量可参考 `.env.example`。生产模式启用后台会话前，请先设置足够长的 `ADMIN_AUTH_SECRET` 并收紧允许访问的来源。
 
+## 店铺入口
+
+首页顶部支持展示“选购服务”入口。公开仓库不会硬编码私有店铺地址，部署或发布前在环境变量中配置即可：
+
+```env
+VITE_SHOP_URL=https://your-shop.example
+VITE_SHOP_LINK_LABEL=选购服务
+```
+
+未设置 `VITE_SHOP_URL` 时，顶部店铺入口会自动隐藏，避免开源版本误导用户访问错误链接。
+
 ## 目录
 
 - `src/`：React 前端

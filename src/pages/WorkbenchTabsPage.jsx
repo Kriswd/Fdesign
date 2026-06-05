@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import BrandLogo from '../components/BrandLogo';
+import ShopLinkButton from '../components/ShopLinkButton';
 import { APP_DISPLAY_NAME } from '../config/appMeta';
 
 export default function WorkbenchTabsPage() {
@@ -47,13 +48,16 @@ export default function WorkbenchTabsPage() {
             </nav>
           </div>
 
-          <a
-            href="/admin"
-            className="shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-xs text-gray-200 transition-colors"
-            title="进入管理后台"
-          >
-            管理后台 <ArrowRight className="w-4 h-4 text-gray-400" />
-          </a>
+          <div className="shrink-0 flex items-center gap-2">
+            <ShopLinkButton />
+            <a
+              href="/admin"
+              className="shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-xs text-gray-200 transition-colors"
+              title="进入管理后台"
+            >
+              管理后台 <ArrowRight className="w-4 h-4 text-gray-400" />
+            </a>
+          </div>
         </div>
       </header>
 
