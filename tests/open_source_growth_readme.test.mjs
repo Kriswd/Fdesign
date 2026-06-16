@@ -74,6 +74,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));
   assert.ok(setupScript.includes('--enable-discussions'));
   assert.ok(setupScript.includes('photoshop-automation'));
+  assert.ok(setupScript.includes('search/issues?q='));
   assert.ok(setupScript.includes('good first issue'));
   assert.ok(setupScript.includes('gh issue create'));
 });

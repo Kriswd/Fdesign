@@ -27,16 +27,15 @@ function Ensure-Label {
 function Test-IssueExists {
   param([string]$Title)
 
-  $search = "in:title `"$Title`""
-  $json = & gh issue list -R $Repo --state all --search $search --json title --limit 100
+  $query = [System.Uri]::EscapeDataString("repo:$Repo is:issue in:title `"$Title`"")
+  $titles = & gh api "search/issues?q=$query&per_page=100" --jq '.items[].title'
   if ($LASTEXITCODE -ne 0) {
-    throw "gh issue list failed for: $Title"
+    throw "gh issue search failed for: $Title"
   }
-  if ([string]::IsNullOrWhiteSpace($json)) {
+  if ([string]::IsNullOrWhiteSpace($titles)) {
     return $false
   }
-  $items = @($json | ConvertFrom-Json)
-  return (@($items | Where-Object { $_.title -eq $Title }).Count -gt 0)
+  return (@($titles | Where-Object { $_ -eq $Title }).Count -gt 0)
 }
 
 function Ensure-Issue {

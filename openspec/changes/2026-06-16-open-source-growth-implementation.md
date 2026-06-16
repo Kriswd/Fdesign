@@ -12,6 +12,7 @@ Implemented the approved public growth assets for Fdesign V3.0: value-led README
 - Store link remains a secondary service entry after quick start and contribution content.
 - Added public launch and roadmap docs under `docs/`.
 - Added GitHub issue/discussion templates and a setup script for metadata, labels, issues, and Discussions.
+- Hardened the setup script on Windows by using the GitHub search API for title checks, avoiding `gh issue list --search` argument splitting when issue titles contain spaces or quotes.
 - Added `tests/open_source_growth_readme.test.mjs` to lock the public-growth contract.
 - Tightened ESLint global ignores so local historical/untracked build directories do not break repository-level lint verification.
 
@@ -21,7 +22,8 @@ Implemented the approved public growth assets for Fdesign V3.0: value-led README
 - `npm run lint`
 - `npm run build`
 - `npm test`
-- Remote GitHub verification after push: repo metadata, release, labels, seed issues, Discussions, and star baseline.
+- `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\setup_github_growth.ps1`
+- Remote GitHub verification after push: public visibility, metadata, release, labels, seed issues, Discussions, and star baseline 0.
 
 ## Risk
 
