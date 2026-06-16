@@ -14,6 +14,7 @@
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
 - 已新增 Demo、Roadmap、Launch Kit、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
+- 已补齐分发渠道清单、UTM 链接、跨平台发布文案、首月增长计划和 GitHub 指标采集脚本。
 
 ## 店铺入口配置
 
@@ -28,7 +29,7 @@
 - 确认 README 中的运行条件仍准确，尤其是 Photoshop 宿主依赖边界。
 - 确认 GitHub Releases、Topics、Labels、Issues 与 Discussions 均指向公开仓库，并且不含私有素材或敏感业务资料。
 - 确认 GitHub Pages 可访问，项目页首屏截图、Logo、GitHub/Star CTA 和店铺次级入口均正常。
-- 发布后记录 Star、Views、Clones、Issue/Discussion 的基线数据。
+- 发布后运行 `scripts/capture_github_growth_metrics.ps1`，记录 Star、Views、Clones、Issue/Discussion、Release 与 Pages 的基线数据。
 
 ## 后续优化
 
@@ -36,3 +37,4 @@
 - 将版本展示继续收敛到自动生成流程，减少手工发布步骤。
 - 为 `/health` 增加构建 commit 和构建时间，方便定位运行版本。
 - 基于第一批真实用户反馈，补充一套净化后的模板案例教程或 GIF 演示。
+- 按 `docs/launch/first_30_days_growth_plan.md` 每周复盘渠道质量，而不是只看 Star 数。

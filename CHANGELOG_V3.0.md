@@ -32,3 +32,4 @@
 - 新增 GitHub Issue/Discussion 模板与 `scripts/setup_github_growth.ps1`，用于配置 Topics、Labels、Discussions 和首批公开议题。
 - 店铺入口保留为次级服务入口，开源快速开始与贡献路径优先展示。
 - 新增 `docs/index.html` GitHub Pages 项目页，用真实工作台截图做首屏，作为社群和社媒传播的稳定落地页。
+- 新增分发渠道清单、UTM 链接、跨平台发布文案、首月增长计划与 `scripts/capture_github_growth_metrics.ps1`，用于持续记录真实 Star、访问、克隆和社区反馈。

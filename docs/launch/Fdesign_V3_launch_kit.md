@@ -81,3 +81,11 @@ The project is useful for ecommerce designers, operators, and developers who nee
 - 不把店铺服务作为开源首屏主 CTA。
 - 不发布私有模板、私有数据、敏感业务资料或私有素材。
 - 所有公开截图必须来自已净化的公开演示界面。
+
+## 延展材料
+
+- [Distribution targets](./distribution_targets.md)：渠道优先级、平台规则和发布顺序。
+- [UTM links](./utm_links.md)：项目页、GitHub、Release 和各渠道追踪链接。
+- [Post templates](./post_templates.md)：V2EX、掘金、社群、HN、Product Hunt、Reddit 和短视频文案。
+- [First 30 days growth plan](./first_30_days_growth_plan.md)：首月行动、复盘指标和停止规则。
+- 指标采集脚本：`powershell -NoProfile -ExecutionPolicy Bypass -File scripts/capture_github_growth_metrics.ps1`
