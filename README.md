@@ -14,6 +14,8 @@ Turns Excel product data into batch PSD deliverables through a local Photoshop a
 
 如果 Fdesign 帮你少做重复图，欢迎给仓库点一个 Star，也欢迎把真实模板场景、问题和改进建议发到 Issues / Discussions。
 
+项目页：<https://kriswd.github.io/Fdesign/>
+
 ## 产品截图
 
 ![闪图 Fdesign 工作台](./public/screenshots/fdesign-workbench-showcase.png)

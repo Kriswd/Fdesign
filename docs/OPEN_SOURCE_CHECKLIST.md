@@ -13,6 +13,7 @@
 - 公开分支会使用净化后的历史发布，避免旧资料随可见性切换一并暴露。
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
 - 已新增 Demo、Roadmap、Launch Kit、Release Notes 与 GitHub Issue/Discussion 模板。
+- 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
 
 ## 店铺入口配置
 
@@ -26,6 +27,7 @@
 - 用 Git 跟踪列表复查公开树，不要包含模板素材、字体、运行输出、日志、真实环境变量或私有资料。
 - 确认 README 中的运行条件仍准确，尤其是 Photoshop 宿主依赖边界。
 - 确认 GitHub Releases、Topics、Labels、Issues 与 Discussions 均指向公开仓库，并且不含私有素材或敏感业务资料。
+- 确认 GitHub Pages 可访问，项目页首屏截图、Logo、GitHub/Star CTA 和店铺次级入口均正常。
 - 发布后记录 Star、Views、Clones、Issue/Discussion 的基线数据。
 
 ## 后续优化

@@ -38,6 +38,9 @@ test('README 应把店铺入口保持为次级服务入口', () => {
 
 test('公开增长文档与发布素材应齐备', () => {
   [
+    'docs/index.html',
+    'docs/assets/fdesign-logo.svg',
+    'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
     'docs/ROADMAP.md',
     'docs/launch/copy-benchmark.md',
@@ -58,6 +61,20 @@ test('公开增长文档与发布素材应齐备', () => {
   assert.ok(benchmark.includes('Batch Mockup Smart Object Replacement'));
 });
 
+test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
+  const page = readText('docs/index.html');
+  const readme = readText('README.md');
+
+  assert.ok(page.includes('<title>闪图 Fdesign V3.0 - Excel 商品数据批量生成 PSD 成品</title>'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign'));
+  assert.ok(page.includes('在 GitHub 查看并 Star'));
+  assert.ok(page.includes('./assets/fdesign-logo.svg'));
+  assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
+  assert.ok(page.includes('og:image'));
+  assert.ok(page.indexOf('在 GitHub 查看并 Star') < page.indexOf('选购服务'));
+  assert.ok(readme.includes('https://kriswd.github.io/Fdesign/'));
+});
+
 test('GitHub 社区入口与设置脚本应可重复执行', () => {
   [
     '.github/ISSUE_TEMPLATE/bug_report.yml',
@@ -72,6 +89,8 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
 
   const setupScript = readText('scripts/setup_github_growth.ps1');
   assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));
+  assert.ok(setupScript.includes('https://kriswd.github.io/Fdesign/'));
+  assert.ok(setupScript.includes('source[path]=/docs'));
   assert.ok(setupScript.includes('--enable-discussions'));
   assert.ok(setupScript.includes('photoshop-automation'));
   assert.ok(setupScript.includes('search/issues?q='));

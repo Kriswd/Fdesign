@@ -4,6 +4,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+$PagesUrl = 'https://kriswd.github.io/Fdesign/'
 
 function Invoke-Gh {
   param([string[]]$Arguments)
@@ -58,13 +59,27 @@ function Ensure-Issue {
   Invoke-Gh $args
 }
 
+function Ensure-GitHubPages {
+  $pages = & gh api "repos/$Repo/pages" --jq '.html_url' 2>$null
+  if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($pages)) {
+    Write-Host "GitHub Pages exists: $pages"
+    return
+  }
+
+  & gh api -X POST "repos/$Repo/pages" -f 'source[branch]=main' -f 'source[path]=/docs'
+  if ($LASTEXITCODE -ne 0) {
+    throw "gh pages setup failed for $Repo"
+  }
+  Write-Host "GitHub Pages enabled: $PagesUrl"
+}
+
 Write-Host "Configuring repository metadata for $Repo"
 
 # Equivalent direct command: gh repo edit Kriswd/Fdesign --enable-discussions --add-topic photoshop-automation
 Invoke-Gh @(
   'repo', 'edit', $Repo,
   '--description', 'Open-source Photoshop + Excel PSD automation workbench for ecommerce image production.',
-  '--homepage', 'https://github.com/Kriswd/Fdesign#readme',
+  '--homepage', $PagesUrl,
   '--enable-issues',
   '--enable-discussions',
   '--add-topic', 'photoshop-automation',
@@ -77,6 +92,8 @@ Invoke-Gh @(
   '--add-topic', 'react',
   '--add-topic', 'nodejs'
 )
+
+Ensure-GitHubPages
 
 Ensure-Label -Name 'good first issue' -Color '7057ff' -Description 'Small, well-scoped tasks for new contributors.'
 Ensure-Label -Name 'help wanted' -Color '008672' -Description 'Useful contributions from the community are welcome.'

@@ -31,3 +31,4 @@
 - 新增 `docs/DEMO.md`、`docs/ROADMAP.md`、`docs/launch/Fdesign_V3_launch_kit.md` 与 `docs/github/release-v3.0.0.md`。
 - 新增 GitHub Issue/Discussion 模板与 `scripts/setup_github_growth.ps1`，用于配置 Topics、Labels、Discussions 和首批公开议题。
 - 店铺入口保留为次级服务入口，开源快速开始与贡献路径优先展示。
+- 新增 `docs/index.html` GitHub Pages 项目页，用真实工作台截图做首屏，作为社群和社媒传播的稳定落地页。
