@@ -60,16 +60,25 @@ function Ensure-Issue {
 }
 
 function Ensure-GitHubPages {
-  $pages = & gh api "repos/$Repo/pages" --jq '.html_url' 2>$null
-  if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($pages)) {
+  $previousErrorActionPreference = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
+  try {
+    $pages = & gh api "repos/$Repo/pages" --jq '.html_url' 2>$null
+    $pagesExitCode = $LASTEXITCODE
+  } finally {
+    $ErrorActionPreference = $previousErrorActionPreference
+  }
+
+  if ($pagesExitCode -eq 0 -and -not [string]::IsNullOrWhiteSpace($pages)) {
     Write-Host "GitHub Pages exists: $pages"
     return
   }
 
-  & gh api -X POST "repos/$Repo/pages" -f 'source[branch]=main' -f 'source[path]=/docs'
+  $pageCreateOutput = & gh api -X POST "repos/$Repo/pages" -f 'source[branch]=main' -f 'source[path]=/docs'
   if ($LASTEXITCODE -ne 0) {
     throw "gh pages setup failed for $Repo"
   }
+  [void]$pageCreateOutput
   Write-Host "GitHub Pages enabled: $PagesUrl"
 }
 
