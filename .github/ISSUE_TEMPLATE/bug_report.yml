@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a reproducible Fdesign issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please remove any private data, PSD files, product images, tokens, or sensitive business information before sharing logs or screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: Fdesign version
+      description: Example: V3.0
+      placeholder: V3.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 x64
+    validations:
+      required: true
+  - type: input
+    id: photoshop
+    attributes:
+      label: Photoshop version
+      placeholder: Photoshop 2024
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version
+      placeholder: Node.js 20.x
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: List the shortest steps that trigger the issue.
+      placeholder: |
+        1. Start backend and frontend
+        2. Import a sanitized PSD template
+        3. Bind Excel field ...
+        4. Click export ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include visible error messages and sanitized logs.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Logs or screenshots
+      description: Paste sanitized logs or attach screenshots without private data.
+    validations:
+      required: false

@@ -1,0 +1,47 @@
+name: Template showcase
+description: Share a sanitized ecommerce PSD workflow or template case.
+title: "[Showcase]: "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please share only sanitized examples. Do not upload private PSDs, private product images, fonts, credentials, or paid assets.
+  - type: input
+    id: template_type
+    attributes:
+      label: Template type
+      placeholder: Product detail page, main image, social image, campaign poster
+    validations:
+      required: true
+  - type: textarea
+    id: input_data
+    attributes:
+      label: Input data shape
+      description: What Excel fields and product images drive this workflow?
+      placeholder: style_no, color_no, title, product_image_45, product_image_front...
+    validations:
+      required: true
+  - type: checkboxes
+    id: output_formats
+    attributes:
+      label: Output formats
+      options:
+        - label: PSD
+        - label: PSB
+        - label: PNG
+        - label: JPEG
+  - type: textarea
+    id: demo
+    attributes:
+      label: Screenshot or demo link
+      description: Link to a sanitized screenshot, video, or repo artifact.
+    validations:
+      required: false
+  - type: textarea
+    id: lessons
+    attributes:
+      label: Reusable lessons
+      description: What should other users learn from this template setup?
+    validations:
+      required: true

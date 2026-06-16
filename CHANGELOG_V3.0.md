@@ -24,3 +24,10 @@
 
 - 刷新可自动修复的依赖锁定版本，将 `multer`、`postcss` 与 `vite` 的直接依赖下限提升到已验证版本。
 - 将 SheetJS `xlsx` 依赖切换到官方 0.20.3 分发包，公开发布前的 `npm audit` 结果为 0 告警。
+
+## 5. 开源增长基础设施
+
+- README 首屏调整为“把 Excel 商品数据，一键变成批量 PSD 成品”的结果导向表达。
+- 新增 `docs/DEMO.md`、`docs/ROADMAP.md`、`docs/launch/Fdesign_V3_launch_kit.md` 与 `docs/github/release-v3.0.0.md`。
+- 新增 GitHub Issue/Discussion 模板与 `scripts/setup_github_growth.ps1`，用于配置 Topics、Labels、Discussions 和首批公开议题。
+- 店铺入口保留为次级服务入口，开源快速开始与贡献路径优先展示。

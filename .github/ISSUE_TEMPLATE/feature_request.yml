@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a workflow improvement or automation capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: pain
+    attributes:
+      label: Workflow pain
+      description: What repeated ecommerce image-production work are you trying to reduce?
+      placeholder: Describe the PSD, Excel, product-image, or export workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: How do you solve this today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: What should Fdesign do differently?
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Main audience
+      options:
+        - Ecommerce designer
+        - Ecommerce operator
+        - Automation developer
+        - Studio/team maintainer
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Are you interested in contributing?
+      options:
+        - I can test it
+        - I can provide a sanitized example
+        - I can submit a PR
+        - Not right now
+    validations:
+      required: true
