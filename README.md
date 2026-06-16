@@ -53,9 +53,21 @@ Turns Excel product data into batch PSD deliverables through a local Photoshop a
 
 ## 快速开始
 
-```bash
+在 Windows PowerShell 中先安装依赖：
+
+```powershell
 npm install
+```
+
+然后分别打开两个终端窗口运行前后端服务：
+
+```powershell
+# 终端 1：启动后端 API
 npm run server
+```
+
+```powershell
+# 终端 2：启动前端开发服务器
 npm run dev
 ```
 
