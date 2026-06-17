@@ -51,11 +51,31 @@ Turns Excel product data into batch PSD deliverables through a local Photoshop a
 
 仓库只包含应用代码，不分发 Photoshop、字体、模板素材或运行产物。
 
+如果你是第一次在 Windows 上启动项目，先确认这三件事：
+
+1. `node -v` 返回 18 或更高版本。
+2. 能在 Photoshop 中手动打开任意 PSD 文件，说明宿主程序已经安装可用。
+3. 你准备了两个终端窗口，一个给后端 `npm run server`，一个给前端 `npm run dev`。
+
 ## 快速开始
 
 ```bash
+git clone https://github.com/Kriswd/Fdesign.git
+cd Fdesign
 npm install
+copy .env.example .env
+copy .env.example .env.local
+```
+
+按顺序启动：
+
+```bash
+# Terminal 1
 npm run server
+```
+
+```bash
+# Terminal 2
 npm run dev
 ```
 
@@ -65,6 +85,8 @@ npm run dev
 - 后端健康检查：`http://127.0.0.1:3001/health`
 
 后端读取当前 shell 中的环境变量；前端本地变量可参考 `.env.example`。生产模式启用后台会话前，请先设置足够长的 `ADMIN_AUTH_SECRET` 并收紧允许访问的来源。
+
+如果前端能打开但导出失败，通常不是前端问题，而是 Photoshop 宿主链路还没有准备好。没有 Photoshop 时，仍然可以先验证界面、PSD 解析和大部分本地流程。
 
 ## 完整演示
 
