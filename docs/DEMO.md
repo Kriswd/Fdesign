@@ -28,5 +28,6 @@
 ## 下一步
 
 - 按 README 的快速开始在本地启动项目。
+- Windows 首次运行时，先复制 `.env.example`，再分别启动 `npm run server` 和 `npm run dev`。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
 - 分享你的模板案例或问题到 GitHub Issues / Discussions。
