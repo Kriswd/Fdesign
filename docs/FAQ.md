@@ -11,9 +11,10 @@ Fdesign 是一个本地 Photoshop 自动化工作台，用来把 Excel 商品数
 建议按这个顺序：
 
 1. 先看 README 首屏和项目页，确认是否符合你的场景。
-2. 打开 [Demo walkthrough](./DEMO.md)，理解主工作流。
-3. 打开 [公开演示包](./demo-kit/README.md)，查看 `sample-products.csv`、`field-map.example.json` 和 `image-manifest.json`。
-4. 本地启动后，先用自己的简化 PSD 模板试一条记录，再批量跑完整数据。
+2. 按 [中文快速试跑](./QUICKSTART_CN.md) 确认 Node.js、前后端端口、后端健康检查和本机 Photoshop。
+3. 打开 [Demo walkthrough](./DEMO.md)，理解主工作流。
+4. 打开 [公开演示包](./demo-kit/README.md)，查看 `sample-products.csv`、`field-map.example.json` 和 `image-manifest.json`。
+5. 本地启动后，先用自己的简化 PSD 模板试一条记录，再批量跑完整数据。
 
 ## 运行需要什么？
 

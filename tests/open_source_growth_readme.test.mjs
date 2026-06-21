@@ -44,6 +44,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
+    'docs/QUICKSTART_CN.md',
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
     'docs/demo-kit/sample-products.csv',
@@ -57,15 +58,21 @@ test('公开演示文档与社区素材应齐备', () => {
   });
 
   const demoKit = readText('docs/demo-kit/README.md');
+  const quickstart = readText('docs/QUICKSTART_CN.md');
   const faq = readText('docs/FAQ.md');
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
+  assert.ok(quickstart.includes('npm config set registry https://registry.npmmirror.com'));
+  assert.ok(quickstart.includes('http://127.0.0.1:3001/health'));
+  assert.ok(quickstart.includes('不包含真实商品图、客户数据、账号信息、订单信息或私有 PSD'));
   assert.ok(faq.includes('Windows 10/11 x64'));
+  assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(faq.includes('field-map.example.json'));
 
   const readme = readText('README.md');
   const launchDir = ['.', 'docs', 'launch'].join('/');
+  assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
   assert.equal(readme.includes(`${launchDir}/`), false);
@@ -81,6 +88,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('./assets/fdesign-logo.svg'));
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));

@@ -66,8 +66,11 @@ npm run dev
 
 后端读取当前 shell 中的环境变量；前端本地变量可参考 `.env.example`。生产模式启用后台会话前，请先设置足够长的 `ADMIN_AUTH_SECRET` 并收紧允许访问的来源。
 
+国内用户第一次试跑建议按 [中文快速试跑](./docs/QUICKSTART_CN.md) 走一遍，先确认 Node.js、前后端端口、Photoshop 调度和公开演示包，再接入真实 PSD 模板。
+
 ## 完整演示
 
+- [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
 - [FAQ](./docs/FAQ.md)
@@ -110,6 +113,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 
 - [架构说明](./docs/ARCHITECTURE.md)
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
+- [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [FAQ](./docs/FAQ.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)
