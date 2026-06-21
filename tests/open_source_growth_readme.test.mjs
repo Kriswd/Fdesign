@@ -95,10 +95,19 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
     '.github/ISSUE_TEMPLATE/template_showcase.yml',
     '.github/ISSUE_TEMPLATE/config.yml',
     '.github/DISCUSSION_TEMPLATE/show-and-tell.md',
+    '.github/PULL_REQUEST_TEMPLATE.md',
+    'CODE_OF_CONDUCT.md',
     'scripts/setup_github_growth.ps1',
   ].forEach((relPath) => {
     assert.equal(fileExists(relPath), true, `${relPath} should exist`);
   });
+
+  const conduct = readText('CODE_OF_CONDUCT.md');
+  const prTemplate = readText('.github/PULL_REQUEST_TEMPLATE.md');
+  assert.ok(conduct.includes('private PSD assets'));
+  assert.ok(conduct.includes('fake stars'));
+  assert.ok(prTemplate.includes('Public Data Check'));
+  assert.ok(prTemplate.includes('No private PSD templates'));
 
   const setupScript = readText('scripts/setup_github_growth.ps1');
   assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));

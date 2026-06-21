@@ -244,3 +244,4 @@
 [2026-06-22] Task: 撤回公开仓库中的内部运营资料并补齐演示包 | Changes: 删除公开树中已跟踪的内部渠道排期、发布文案、复盘表和执行计划；新增 `docs/demo-kit/` 净化示例数据、字段映射和 SVG 示例图；`.gitignore` 增加本地私有目录与旧内部资料目录忽略规则，后续内部作战资料只留本地私有目录。 | Risk: Low. 仅调整公开文档边界和演示材料，不改变 PSD 导出、后台 API、发布包或 GitHub 仓库设置。
 [2026-06-22] Task: 修复 GitHub Pages 演示入口 | Changes: 将 Pages 首屏的 Demo CTA 从不存在的静态 HTML 改为 GitHub 演示包入口，并新增公开演示包区块，直接链接 `docs/demo-kit`、Demo walkthrough 和示例 CSV；更新公开增长测试锁定演示入口可达且不再出现坏链接。 | Risk: Low. 仅修改静态 Pages 文案与链接，不改变应用运行、PSD 导出、后台 API 或发布包逻辑。
 [2026-06-22] Task: 补齐公开 FAQ | Changes: 新增 `docs/FAQ.md`，覆盖第一次试跑顺序、运行要求、演示包、Excel 字段映射、图片匹配、Photoshop 导出失败、issue 净化和店铺入口边界；README 与 GitHub Pages 增加 FAQ 入口，并更新公开增长测试锁定 FAQ 可见。 | Risk: Low. 仅新增公开支持文档和静态链接，不改变应用运行、PSD 导出、后台 API 或发布包逻辑。
+[2026-06-22] Task: 补齐公开协作治理入口 | Changes: 新增 `CODE_OF_CONDUCT.md` 与 `.github/PULL_REQUEST_TEMPLATE.md`，明确社区行为、PR 验证项和公开数据净化检查；更新开源增长测试锁定行为准则与 PR 模板存在。 | Risk: Low. 仅新增公开协作文档和测试断言，不改变应用运行、PSD 导出、后台 API、GitHub 仓库设置或发布包逻辑。
