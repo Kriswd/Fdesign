@@ -73,6 +73,10 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('在 GitHub 查看并 Star'));
   assert.ok(page.includes('./assets/fdesign-logo.svg'));
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
+  assert.ok(page.includes('先用公开演示包看懂字段绑定'));
+  assert.equal(page.includes('./DEMO.html'), false);
   assert.ok(page.includes('og:image'));
   assert.ok(page.indexOf('在 GitHub 查看并 Star') < page.indexOf('选购服务'));
   assert.ok(readme.includes('https://kriswd.github.io/Fdesign/'));
