@@ -70,6 +70,7 @@ npm run dev
 
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
+- [FAQ](./docs/FAQ.md)
 - [Roadmap](./docs/ROADMAP.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 
@@ -109,6 +110,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 
 - [架构说明](./docs/ARCHITECTURE.md)
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
+- [FAQ](./docs/FAQ.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)
 - [贡献指南](./CONTRIBUTING.md)
