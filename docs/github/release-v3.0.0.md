@@ -14,7 +14,7 @@ Fdesign V3.0 is the first public open-source release focused on ecommerce PSD pr
 - Real workbench screenshot showing canvas preview, product-slot binding, Excel data console, and export entry.
 - Local workflow for binding Excel fields and product images to PSD variables.
 - Batch export path for PSD, PSB, PNG, and JPEG.
-- Public issue templates, roadmap, launch kit, and contribution paths.
+- Public issue templates, roadmap, demo kit, and contribution paths.
 - Configurable shop/service entry kept separate from open-source usage.
 
 ## Requirements

@@ -1,0 +1,5 @@
+sku,style_no,color_no,series,year,category,frame_material,lens_type,frame_width_mm,lens_width_mm,bridge_mm,temple_mm,weight_g,hero_image,side_image,detail_image,title,subtitle
+FDX1001-C10,FDX1001,C10,Open Demo,2026,optical,acetate,demo clear,138,49,20,145,18,images/FDX1001-C10-front.svg,images/FDX1001-C10-side.svg,images/FDX1001-C10-detail.svg,FDX1001 C10 Optical Frame,Lightweight demo frame for PSD automation
+FDX1001-C20,FDX1001,C20,Open Demo,2026,optical,acetate,demo clear,138,49,20,145,18,images/FDX1001-C20-front.svg,images/FDX1001-C20-side.svg,images/FDX1001-C20-detail.svg,FDX1001 C20 Optical Frame,Second colorway for field replacement checks
+FDX1002-C10,FDX1002,C10,Open Demo,2026,sunglasses,metal,demo tinted,142,52,18,148,22,images/FDX1002-C10-front.svg,images/FDX1002-C10-side.svg,images/FDX1002-C10-detail.svg,FDX1002 C10 Sunglasses,Metal demo frame with tinted lens placeholder
+FDX1002-C30,FDX1002,C30,Open Demo,2026,sunglasses,metal,demo tinted,142,52,18,148,22,images/FDX1002-C30-front.svg,images/FDX1002-C30-side.svg,images/FDX1002-C30-detail.svg,FDX1002 C30 Sunglasses,Alternate colorway for batch export validation

@@ -25,12 +25,12 @@
 - 刷新可自动修复的依赖锁定版本，将 `multer`、`postcss` 与 `vite` 的直接依赖下限提升到已验证版本。
 - 将 SheetJS `xlsx` 依赖切换到官方 0.20.3 分发包，公开发布前的 `npm audit` 结果为 0 告警。
 
-## 5. 开源增长基础设施
+## 5. 开源展示与社区基础设施
 
 - README 首屏调整为“把 Excel 商品数据，一键变成批量 PSD 成品”的结果导向表达。
-- 新增 `docs/DEMO.md`、`docs/ROADMAP.md`、`docs/launch/Fdesign_V3_launch_kit.md` 与 `docs/github/release-v3.0.0.md`。
+- 新增 `docs/DEMO.md`、`docs/demo-kit/`、`docs/ROADMAP.md` 与 `docs/github/release-v3.0.0.md`。
 - 新增 GitHub Issue/Discussion 模板与 `scripts/setup_github_growth.ps1`，用于配置 Topics、Labels、Discussions 和首批公开议题。
 - 店铺入口保留为次级服务入口，开源快速开始与贡献路径优先展示。
 - 新增 `docs/index.html` GitHub Pages 项目页，用真实工作台截图做首屏，作为社群和社媒传播的稳定落地页。
-- 新增分发渠道清单、UTM 链接、跨平台发布文案、首月增长计划与 `scripts/capture_github_growth_metrics.ps1`，用于持续记录真实 Star、访问、克隆和社区反馈。
-- 新增国内增长作战手册、国内 30 天内容排期、国内平台发布模板和渠道 scorecard，将 V2EX、掘金、知乎、B 站、小红书、微信社群、开源中国/Gitee/GitCode 的执行方式拆成可复盘动作。
+- 保留 `scripts/capture_github_growth_metrics.ps1` 用于持续记录真实 Star、访问、克隆和社区反馈。
+- 内部运营资料、渠道排期和发布文案从公开文档中撤出，后续只保留在本地私有工作目录。

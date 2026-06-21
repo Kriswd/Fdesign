@@ -69,11 +69,9 @@ npm run dev
 ## 完整演示
 
 - [Demo walkthrough](./docs/DEMO.md)
+- [公开演示包](./docs/demo-kit/README.md)
 - [Roadmap](./docs/ROADMAP.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
-- [V3.0 launch kit](./docs/launch/Fdesign_V3_launch_kit.md)
-- [Distribution plan](./docs/launch/distribution_targets.md)
-- [China growth playbook](./docs/launch/china_growth_playbook.md)
 
 ## 贡献方式
 
@@ -105,7 +103,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - `server/`：后端 API、模板存储与 Photoshop 调度
 - `server/photoshop/`：Photoshop JSX/VBS 脚本
 - `tests/`：Node 测试和浏览器烟测
-- `docs/`：架构、API、使用说明与公开发布资料
+- `docs/`：架构、API、使用说明与公开演示资料
 
 ## 开发文档
 
@@ -113,8 +111,6 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)
-- [分发与增长指标](./docs/launch/first_30_days_growth_plan.md)
-- [国内推广作战手册](./docs/launch/china_growth_playbook.md)
 - [贡献指南](./CONTRIBUTING.md)
 - [安全上报](./SECURITY.md)
 

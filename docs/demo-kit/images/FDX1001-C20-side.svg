@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">FDX1001 C20 side demo eyewear</title>
+  <desc id="desc">Synthetic side view eyewear asset for Fdesign demo data.</desc>
+  <rect width="1200" height="800" fill="#fffaf0"/>
+  <path d="M250 405 C250 322 338 283 450 296 C536 306 608 352 632 402 C653 447 626 500 564 521 C468 554 328 534 274 486 C258 467 250 441 250 405 Z" fill="#fffbeb" stroke="#7c2d12" stroke-width="18"/>
+  <path d="M628 402 C746 354 901 339 1068 364" fill="none" stroke="#b45309" stroke-width="18" stroke-linecap="round"/>
+  <path d="M1068 364 C1102 374 1121 397 1111 429" fill="none" stroke="#b45309" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="634" cy="402" r="16" fill="#431407"/>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#431407">FDX1001-C20 side</text>
+</svg>

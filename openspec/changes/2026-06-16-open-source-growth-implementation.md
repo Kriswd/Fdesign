@@ -4,13 +4,13 @@ Date: 2026-06-16
 
 ## Summary
 
-Implemented the approved public growth assets for Fdesign V3.0: value-led README, demo docs, roadmap, launch kit, release notes, GitHub templates, and repeatable GitHub setup script.
+Implemented the approved public open-source assets for Fdesign V3.0: value-led README, demo docs, roadmap, release notes, GitHub templates, and repeatable GitHub setup script.
 
 ## Changes
 
 - README now leads with the ecommerce production outcome: Excel product data to batch PSD deliverables.
 - Store link remains a secondary service entry after quick start and contribution content.
-- Added public launch and roadmap docs under `docs/`.
+- Added public demo and roadmap docs under `docs/`.
 - Added GitHub issue/discussion templates and a setup script for metadata, labels, issues, and Discussions.
 - Hardened the setup script on Windows by using the GitHub search API for title checks, avoiding `gh issue list --search` argument splitting when issue titles contain spaces or quotes.
 - Added `tests/open_source_growth_readme.test.mjs` to lock the public-growth contract.

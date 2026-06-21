@@ -36,29 +36,32 @@ test('README 应把店铺入口保持为次级服务入口', () => {
   assert.ok(readme.includes('开源功能可直接本地运行；需要模板定制、部署协助或成品服务时，再使用店铺入口。'));
 });
 
-test('公开增长文档与发布素材应齐备', () => {
+test('公开演示文档与社区素材应齐备', () => {
   [
     'docs/index.html',
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
+    'docs/demo-kit/README.md',
+    'docs/demo-kit/sample-products.csv',
+    'docs/demo-kit/field-map.example.json',
+    'docs/demo-kit/image-manifest.json',
+    'docs/demo-kit/images/FDX1001-C10-front.svg',
     'docs/ROADMAP.md',
-    'docs/launch/copy-benchmark.md',
-    'docs/launch/Fdesign_V3_launch_kit.md',
     'docs/github/release-v3.0.0.md',
   ].forEach((relPath) => {
     assert.equal(fileExists(relPath), true, `${relPath} should exist`);
   });
 
-  const launchKit = readText('docs/launch/Fdesign_V3_launch_kit.md');
-  assert.ok(launchKit.includes('国内电商设计师/运营首发'));
-  assert.ok(launchKit.includes('Star 转化复盘'));
-  assert.ok(launchKit.includes('English short summary'));
+  const demoKit = readText('docs/demo-kit/README.md');
+  assert.ok(demoKit.includes('净化演示包'));
+  assert.ok(demoKit.includes('synthetic demo data'));
+  assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
 
-  const benchmark = readText('docs/launch/copy-benchmark.md');
-  assert.ok(benchmark.includes('Bjango-Actions'));
-  assert.ok(benchmark.includes('Proxyshop'));
-  assert.ok(benchmark.includes('Batch Mockup Smart Object Replacement'));
+  const readme = readText('README.md');
+  const launchDir = ['.', 'docs', 'launch'].join('/');
+  assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
+  assert.equal(readme.includes(`${launchDir}/`), false);
 });
 
 test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {

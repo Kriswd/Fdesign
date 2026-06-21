@@ -44,3 +44,10 @@ output/
 *.otf
 *.woff
 *.woff2
+
+# Local-only operating material. Keep growth plans, launch notes, and private
+# working briefs out of the public repository.
+private/
+internal/
+docs/launch/
+docs/superpowers/

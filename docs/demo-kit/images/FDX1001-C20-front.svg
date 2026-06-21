@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">FDX1001 C20 front demo eyewear</title>
+  <desc id="desc">Synthetic front view eyewear asset for Fdesign demo data.</desc>
+  <rect width="1200" height="800" fill="#fffaf0"/>
+  <path d="M246 406 C246 320 330 270 434 290 C492 301 535 338 554 394 C568 435 551 482 511 508 C451 548 337 540 287 498 C262 477 246 447 246 406 Z" fill="#fffbeb" stroke="#7c2d12" stroke-width="18"/>
+  <path d="M646 394 C665 338 708 301 766 290 C870 270 954 320 954 406 C954 447 938 477 913 498 C863 540 749 548 689 508 C649 482 632 435 646 394 Z" fill="#fffbeb" stroke="#7c2d12" stroke-width="18"/>
+  <path d="M550 400 C582 372 618 372 650 400" fill="none" stroke="#7c2d12" stroke-width="18" stroke-linecap="round"/>
+  <path d="M246 407 C175 386 136 378 90 394" fill="none" stroke="#b45309" stroke-width="14" stroke-linecap="round"/>
+  <path d="M954 407 C1025 386 1064 378 1110 394" fill="none" stroke="#b45309" stroke-width="14" stroke-linecap="round"/>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#431407">FDX1001-C20 front</text>
+</svg>

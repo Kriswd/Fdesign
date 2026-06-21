@@ -1,0 +1,78 @@
+{
+  "source": "fdesign-public-demo",
+  "license": "MIT-compatible synthetic SVG demo assets",
+  "images": [
+    {
+      "sku": "FDX1001-C10",
+      "slot": "hero_image",
+      "angle": "front",
+      "path": "images/FDX1001-C10-front.svg"
+    },
+    {
+      "sku": "FDX1001-C10",
+      "slot": "side_image",
+      "angle": "side",
+      "path": "images/FDX1001-C10-side.svg"
+    },
+    {
+      "sku": "FDX1001-C10",
+      "slot": "detail_image",
+      "angle": "detail",
+      "path": "images/FDX1001-C10-detail.svg"
+    },
+    {
+      "sku": "FDX1001-C20",
+      "slot": "hero_image",
+      "angle": "front",
+      "path": "images/FDX1001-C20-front.svg"
+    },
+    {
+      "sku": "FDX1001-C20",
+      "slot": "side_image",
+      "angle": "side",
+      "path": "images/FDX1001-C20-side.svg"
+    },
+    {
+      "sku": "FDX1001-C20",
+      "slot": "detail_image",
+      "angle": "detail",
+      "path": "images/FDX1001-C20-detail.svg"
+    },
+    {
+      "sku": "FDX1002-C10",
+      "slot": "hero_image",
+      "angle": "front",
+      "path": "images/FDX1002-C10-front.svg"
+    },
+    {
+      "sku": "FDX1002-C10",
+      "slot": "side_image",
+      "angle": "side",
+      "path": "images/FDX1002-C10-side.svg"
+    },
+    {
+      "sku": "FDX1002-C10",
+      "slot": "detail_image",
+      "angle": "detail",
+      "path": "images/FDX1002-C10-detail.svg"
+    },
+    {
+      "sku": "FDX1002-C30",
+      "slot": "hero_image",
+      "angle": "front",
+      "path": "images/FDX1002-C30-front.svg"
+    },
+    {
+      "sku": "FDX1002-C30",
+      "slot": "side_image",
+      "angle": "side",
+      "path": "images/FDX1002-C30-side.svg"
+    },
+    {
+      "sku": "FDX1002-C30",
+      "slot": "detail_image",
+      "angle": "detail",
+      "path": "images/FDX1002-C30-detail.svg"
+    }
+  ]
+}

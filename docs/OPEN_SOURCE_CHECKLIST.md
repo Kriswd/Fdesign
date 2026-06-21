@@ -12,10 +12,10 @@
 - 已更新可自动修复的依赖审计项，并将 SheetJS 依赖切换到官方 0.20.3 分发包。
 - 公开分支会使用净化后的历史发布，避免旧资料随可见性切换一并暴露。
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
-- 已新增 Demo、Roadmap、Launch Kit、Release Notes 与 GitHub Issue/Discussion 模板。
+- 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
-- 已补齐分发渠道清单、UTM 链接、跨平台发布文案、首月增长计划和 GitHub 指标采集脚本。
-- 已补齐国内增长作战手册、国内 30 天内容排期、国内平台发布模板和国内渠道 scorecard。
+- 已保留 `scripts/capture_github_growth_metrics.ps1` 用于本地记录真实 Star、访问、克隆和社区反馈。
+- 内部运营、渠道排期、发布文案和复盘资料不得提交到公开仓库；本地只放在 `private/` 或 `internal/`。
 
 ## 店铺入口配置
 
@@ -38,5 +38,4 @@
 - 将版本展示继续收敛到自动生成流程，减少手工发布步骤。
 - 为 `/health` 增加构建 commit 和构建时间，方便定位运行版本。
 - 基于第一批真实用户反馈，补充一套净化后的模板案例教程或 GIF 演示。
-- 按 `docs/launch/first_30_days_growth_plan.md` 每周复盘渠道质量，而不是只看 Star 数。
-- 国内推广优先按 `docs/launch/china_growth_playbook.md` 执行，每次发布后补 `docs/launch/china_growth_scorecard.md`。
+- 每周用 GitHub traffic、clones、issues 和真实反馈复盘公开页与 README 转化质量，而不是只看 Star 数。

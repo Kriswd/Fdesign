@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">FDX1001 C20 detail demo eyewear</title>
+  <desc id="desc">Synthetic detail view eyewear asset for Fdesign demo data.</desc>
+  <rect width="1200" height="800" fill="#fffaf0"/>
+  <rect x="260" y="244" width="680" height="312" rx="36" fill="#fde68a" stroke="#7c2d12" stroke-width="16"/>
+  <path d="M332 404 H516 C560 404 578 372 600 350 C622 372 640 404 684 404 H868" fill="none" stroke="#431407" stroke-width="22" stroke-linecap="round"/>
+  <path d="M386 474 H814" stroke="#b45309" stroke-width="12" stroke-linecap="round" stroke-dasharray="22 22"/>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#431407">FDX1001-C20 detail</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "template": "fdesign-public-demo",
+  "version": "3.0",
+  "textVariables": {
+    "sku": "sku",
+    "model_no": "style_no",
+    "color_no": "color_no",
+    "series": "series",
+    "year": "year",
+    "category": "category",
+    "material": "frame_material",
+    "lens_type": "lens_type",
+    "frame_width": "frame_width_mm",
+    "lens_width": "lens_width_mm",
+    "bridge": "bridge_mm",
+    "temple": "temple_mm",
+    "weight": "weight_g",
+    "title": "title",
+    "subtitle": "subtitle"
+  },
+  "imageVariables": {
+    "hero_image": "hero_image",
+    "side_image": "side_image",
+    "detail_image": "detail_image"
+  },
+  "outputNaming": {
+    "folder": "{style_no}-{color_no}",
+    "file": "{sku}-{title}"
+  }
+}

@@ -28,5 +28,6 @@
 ## 下一步
 
 - 按 README 的快速开始在本地启动项目。
+- 下载或查看 [公开演示包](./demo-kit/README.md)，用净化后的示例数据理解字段映射方式。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
 - 分享你的模板案例或问题到 GitHub Issues / Discussions。
