@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kriswd.github.io/Fdesign/sitemap.xml
