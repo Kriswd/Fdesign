@@ -73,6 +73,7 @@ npm run dev
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [V3.0 launch kit](./docs/launch/Fdesign_V3_launch_kit.md)
 - [Distribution plan](./docs/launch/distribution_targets.md)
+- [China growth playbook](./docs/launch/china_growth_playbook.md)
 
 ## 贡献方式
 
@@ -113,6 +114,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)
 - [分发与增长指标](./docs/launch/first_30_days_growth_plan.md)
+- [国内推广作战手册](./docs/launch/china_growth_playbook.md)
 - [贡献指南](./CONTRIBUTING.md)
 - [安全上报](./SECURITY.md)
 

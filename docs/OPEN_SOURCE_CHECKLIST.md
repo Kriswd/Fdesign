@@ -15,6 +15,7 @@
 - 已新增 Demo、Roadmap、Launch Kit、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
 - 已补齐分发渠道清单、UTM 链接、跨平台发布文案、首月增长计划和 GitHub 指标采集脚本。
+- 已补齐国内增长作战手册、国内 30 天内容排期、国内平台发布模板和国内渠道 scorecard。
 
 ## 店铺入口配置
 
@@ -38,3 +39,4 @@
 - 为 `/health` 增加构建 commit 和构建时间，方便定位运行版本。
 - 基于第一批真实用户反馈，补充一套净化后的模板案例教程或 GIF 演示。
 - 按 `docs/launch/first_30_days_growth_plan.md` 每周复盘渠道质量，而不是只看 Star 数。
+- 国内推广优先按 `docs/launch/china_growth_playbook.md` 执行，每次发布后补 `docs/launch/china_growth_scorecard.md`。

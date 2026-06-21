@@ -27,6 +27,8 @@
 | B 站 | https://kriswd.github.io/Fdesign/?utm_source=bilibili&utm_medium=video&utm_campaign=fdesign_v3_launch&utm_content=workflow_demo |
 | 视频号 | https://kriswd.github.io/Fdesign/?utm_source=wechat_channels&utm_medium=video&utm_campaign=fdesign_v3_launch&utm_content=workflow_demo |
 | 小红书 | https://kriswd.github.io/Fdesign/?utm_source=xiaohongshu&utm_medium=social&utm_campaign=fdesign_v3_launch&utm_content=designer_workflow |
+| 知乎 | https://kriswd.github.io/Fdesign/?utm_source=zhihu&utm_medium=answer&utm_campaign=fdesign_v3_launch&utm_content=psd_batch_answer |
+| 开源中国 | https://kriswd.github.io/Fdesign/?utm_source=oschina&utm_medium=community&utm_campaign=fdesign_v3_launch&utm_content=china_open_source_intro |
 | Hacker News | https://kriswd.github.io/Fdesign/?utm_source=hackernews&utm_medium=show_hn&utm_campaign=fdesign_v3_launch&utm_content=english_launch |
 | Reddit | https://kriswd.github.io/Fdesign/?utm_source=reddit&utm_medium=community&utm_campaign=fdesign_v3_launch&utm_content=transparent_maker_post |
 | Awesome list PR | https://kriswd.github.io/Fdesign/?utm_source=awesome_list&utm_medium=referral&utm_campaign=fdesign_v3_launch&utm_content=resource_pr |

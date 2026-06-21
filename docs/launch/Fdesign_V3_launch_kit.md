@@ -88,4 +88,8 @@ The project is useful for ecommerce designers, operators, and developers who nee
 - [UTM links](./utm_links.md)：项目页、GitHub、Release 和各渠道追踪链接。
 - [Post templates](./post_templates.md)：V2EX、掘金、社群、HN、Product Hunt、Reddit 和短视频文案。
 - [First 30 days growth plan](./first_30_days_growth_plan.md)：首月行动、复盘指标和停止规则。
+- [China growth playbook](./china_growth_playbook.md)：国内渠道打法、内容节奏和 10,000 Star 路线。
+- [China content calendar](./china_content_calendar.md)：国内 30 天内容排期。
+- [China post templates](./china_post_templates.md)：国内平台可复制发布文案。
+- [China growth scorecard](./china_growth_scorecard.md)：国内渠道复盘评分表。
 - 指标采集脚本：`powershell -NoProfile -ExecutionPolicy Bypass -File scripts/capture_github_growth_metrics.ps1`

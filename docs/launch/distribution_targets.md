@@ -35,6 +35,13 @@
 5. Week 2：如果英文 quick start 足够顺，提交 Show HN。
 6. Week 3-4：补齐 GIF/视频和 gallery 后再排 Product Hunt。
 
+国内渠道的细化打法见：
+
+- [Fdesign 国内增长作战手册](./china_growth_playbook.md)
+- [Fdesign 国内 30 天内容排期](./china_content_calendar.md)
+- [Fdesign 国内平台发布模板](./china_post_templates.md)
+- [Fdesign 国内增长 Scorecard](./china_growth_scorecard.md)
+
 ## 不做的事
 
 - 不购买、交换、诱导或伪造 Star。
