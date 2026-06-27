@@ -1,5 +1,5 @@
 {
-  "name": "psd-to-ecommerce-new",
+  "name": "fdesign",
   "private": false,
   "version": "3.0",
   "description": "Photoshop-powered PSD automation workbench for ecommerce image production.",
@@ -17,6 +17,10 @@
     "psd",
     "ecommerce",
     "image-automation",
+    "psd-automation",
+    "photoshop-automation",
+    "excel-automation",
+    "design-automation",
     "react"
   ],
   "type": "module",

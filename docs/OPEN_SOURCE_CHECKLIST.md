@@ -1,6 +1,6 @@
 # 开源检查清单
 
-更新日期：2026-06-16
+更新日期：2026-06-28
 
 ## 本次已完成
 
@@ -14,6 +14,8 @@
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
 - 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
+- GitHub Pages 顶部导航已加入“选购服务”入口，店铺仍作为次级服务入口，不影响开源本地试跑。
+- `package.json` 包名已从旧工程名收敛为 `fdesign`，并补充 PSD/Photoshop/Excel 自动化关键词。
 - 已保留 `scripts/capture_github_growth_metrics.ps1` 用于本地记录真实 Star、访问、克隆和社区反馈。
 - 内部运营、渠道排期、发布文案和复盘资料不得提交到公开仓库；本地只放在 `private/` 或 `internal/`。
 
