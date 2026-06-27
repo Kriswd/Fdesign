@@ -1,0 +1,93 @@
+name: PSD 工作流适配反馈
+description: 描述净化后的 PSD + Excel + 图片流程，判断是否适合 Fdesign
+title: "[Workflow Fit]: "
+labels: ["workflow-fit", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        用这个模板提交公开安全的流程结构，帮助维护者判断 Fdesign 是否适配，也方便沉淀下一批案例和文档。
+        请不要上传私有 PSD、真实商品图、账号信息、token、后台截图或未净化字段。需要截图时请先替换为假数据。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公开信息确认
+      options:
+        - label: 我已经移除私有 PSD、真实商品图、账号信息、token、后台截图和未净化字段。
+          required: true
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 你的主要场景
+      options:
+        - 主图多款号 / 多色号批量导出
+        - 多画板详情页批量导出
+        - 商品详情页套版 / 字段组合
+        - 图片匹配和角度图绑定
+        - Photoshop 导出链路
+        - 还不确定
+    validations:
+      required: true
+  - type: textarea
+    id: psd_structure
+    attributes:
+      label: 净化后的 PSD 结构
+      description: 描述画板、组、文字变量、图片变量和商品位关系，不要上传私有 PSD。
+      placeholder: |
+        画板：Hero、Specs、Angles
+        文字变量：style_no、color_no、title
+        图片变量：image_front、image_side、image_detail
+        商品位：main_slot、extra_slot_1
+    validations:
+      required: true
+  - type: textarea
+    id: excel_fields
+    attributes:
+      label: Excel 字段形状
+      description: 只写字段名和假值，说明哪些字段参与命名、筛选或规则链。
+      placeholder: |
+        style_no=FDX1001
+        color_no=C10
+        title=示例标题
+        image_front=FDX1001-C10-front.png
+    validations:
+      required: true
+  - type: textarea
+    id: image_naming
+    attributes:
+      label: 图片命名与匹配规则
+      description: 描述款号、色号、角度、序号等如何匹配到 PSD 图片变量。
+      placeholder: FDX1001-C10-front.png -> image_front；FDX1001-C10-side.png -> image_side
+    validations:
+      required: true
+  - type: textarea
+    id: expected_outputs
+    attributes:
+      label: 期望导出结果
+      description: 写清每条记录、每个画板或每个商品位最终要导出什么文件。
+      placeholder: |
+        每个款色导出 1 个 PSD 和 3 张 JPEG。
+        文件名：style_no-color_no-artboard.jpg
+    validations:
+      required: true
+  - type: dropdown
+    id: trial_status
+    attributes:
+      label: 目前试跑状态
+      options:
+        - 已看过公开演示包，还没本地启动
+        - 已完成中文快速试跑
+        - 已导入自己的净化模板结构
+        - 已卡在图片匹配
+        - 已卡在 Photoshop 导出
+        - 只想先判断适配程度
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: 当前最想确认的问题
+      description: 写一个最具体的问题，方便维护者给出可执行建议。
+      placeholder: 这个多画板结构是否适合先从 demo-kit 迁移？图片变量命名应该怎么整理？
+    validations:
+      required: true

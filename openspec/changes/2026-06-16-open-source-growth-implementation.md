@@ -12,7 +12,7 @@ Implemented the approved public open-source assets for Fdesign V3.0: value-led R
 - Store link remains a secondary service entry after quick start and contribution content.
 - Added public demo and roadmap docs under `docs/`.
 - Added GitHub issue/discussion templates and a setup script for metadata, labels, issues, and Discussions.
-- Hardened the setup script on Windows by using the GitHub search API for title checks, avoiding `gh issue list --search` argument splitting when issue titles contain spaces or quotes.
+- Hardened the setup script on Windows by using the GitHub search API for title checks, avoiding `gh issue list --search` argument splitting when issue titles contain spaces or quotation marks.
 - Added `tests/open_source_growth_readme.test.mjs` to lock the public-growth contract.
 - Tightened ESLint global ignores so local historical/untracked build directories do not break repository-level lint verification.
 

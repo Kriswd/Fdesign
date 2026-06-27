@@ -24,6 +24,7 @@ V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 
 第一次从社区或朋友转发进来，可以先看 [Fdesign 中文上手入口](./docs/START_HERE_CN.md)，再决定是看演示、试跑、读案例还是提交反馈。
 如果你还不确定自己的流程是否适合，可以先读 [Fdesign 中文适用场景](./docs/USE_CASES_CN.md)。
+如果你已经能描述自己的 PSD、Excel 字段和图片命名规则，可以直接提交 [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)。
 
 ## 产品截图
 
@@ -87,6 +88,7 @@ npm run dev
 - [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)
 - [中文上手入口](./docs/START_HERE_CN.md)
 - [中文适用场景](./docs/USE_CASES_CN.md)
+- [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)
 - [Demo walkthrough](./docs/DEMO.md)
@@ -118,6 +120,7 @@ npm run dev
 提交真实模板/工作流案例前，请先按 [净化案例提交指南](./docs/SHOWCASE_GUIDE.md) 处理字段、截图和素材，避免公开私有 PSD、敏感业务资料或授权不清的图片。
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
+如果项目已经能启动，但你不确定自己的 PSD 结构、Excel 字段和图片命名能不能迁移，优先用 [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)。
 提交前建议先过一遍 [中文排障清单](./docs/TROUBLESHOOTING_CN.md)，这样反馈里能直接带上最短复现步骤和净化后的错误摘要。
 如果遇到图片未绑定、角度图匹配错位、图层变量不识别或字段错列，可以先对照 [图片匹配和图层命名净化样例](./docs/TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例) 整理可公开信息。
 如果遇到 `IDAT: incorrect data check`、Photoshop 静默吞任务、批量中途失败或 PSD/PSB 保存失败，可以先对照 [Photoshop 导出失败净化样例](./docs/TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例) 整理可公开信息。
@@ -150,6 +153,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
 - [中文上手入口](./docs/START_HERE_CN.md)
 - [中文适用场景](./docs/USE_CASES_CN.md)
+- [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [公开净化案例库](./docs/showcases/README.md)

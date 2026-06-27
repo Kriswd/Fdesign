@@ -17,7 +17,8 @@
 1. 先按 [中文快速试跑](./QUICKSTART_CN.md) 走一遍。
 2. 卡住时先看 [中文排障清单](./TROUBLESHOOTING_CN.md)。
 3. 仍然跑不通，提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。
-4. 不确定是否是 bug，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述现象。
+4. 能跑起来但不确定自己的模板结构是否适配，提交 [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)。
+5. 不确定是否是 bug，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述现象。
 
 反馈里尽量写清：
 
@@ -31,6 +32,7 @@
 ## 净化案例怎么提
 
 如果你想分享自己的模板工作流，请先看 [净化案例提交指南](./SHOWCASE_GUIDE.md) 和 [公开净化案例库](./showcases/README.md)。
+还没有整理成完整案例时，先用 [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml) 描述结构和卡点。
 
 推荐提供这些信息：
 

@@ -46,6 +46,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/sitemap.xml',
     'docs/START_HERE_CN.md',
     'docs/USE_CASES_CN.md',
+    '.github/ISSUE_TEMPLATE/workflow_fit.yml',
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-social-card.png',
     'docs/assets/fdesign-workflow-demo.gif',
@@ -95,15 +96,18 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(llms.includes('Fdesign is an open-source Photoshop + Excel PSD automation workbench'));
   assert.ok(llms.includes('Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
   assert.ok(llms.includes('Use cases CN: https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
+  assert.ok(llms.includes('Workflow fit feedback: https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml'));
   assert.ok(llms.includes('Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(llms.includes('Demo kit: https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(llms.includes('Use GitHub Issues or Discussions with sanitized examples only'));
   assert.ok(startHere.includes('Fdesign 中文上手入口'));
   assert.ok(startHere.includes('[Fdesign 中文适用场景](./USE_CASES_CN.md)'));
+  assert.ok(startHere.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(startHere.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(useCases.includes('Fdesign 中文适用场景'));
   assert.ok(useCases.includes('电商主图多款号、多色号批量导出'));
   assert.ok(useCases.includes('[多画板详情页批量导出](./showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md)'));
+  assert.ok(useCases.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(useCases.includes('[中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)'));
   assert.ok(useCases.includes('不要提交私有 PSD、真实商品图、账号信息、token、后台截图或未净化字段'));
   assert.ok(startHere.includes('[公开演示包](./demo-kit/README.md)'));
@@ -155,6 +159,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(contributingCn.includes('Fdesign 中文贡献指南'));
   assert.ok(contributingCn.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(contributingCn.includes('[中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)'));
+  assert.ok(contributingCn.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(contributingCn.includes('不要在 issue、discussion、PR 或截图中提交这些内容'));
   assert.ok(contributingCn.includes('敏感业务资料'));
   assert.ok(showcaseIndex.includes('Fdesign 公开净化案例库'));
@@ -192,6 +197,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(readme.includes('[工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[中文上手入口](./docs/START_HERE_CN.md)'));
   assert.ok(readme.includes('[中文适用场景](./docs/USE_CASES_CN.md)'));
+  assert.ok(readme.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
@@ -222,6 +228,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/showcases'));
@@ -279,6 +286,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
     '.github/ISSUE_TEMPLATE/feature_request.yml',
     '.github/ISSUE_TEMPLATE/template_showcase.yml',
     '.github/ISSUE_TEMPLATE/quickstart_feedback.yml',
+    '.github/ISSUE_TEMPLATE/workflow_fit.yml',
     '.github/ISSUE_TEMPLATE/config.yml',
     '.github/DISCUSSION_TEMPLATE/show-and-tell.md',
     '.github/PULL_REQUEST_TEMPLATE.md',
@@ -308,15 +316,24 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('quickstart-feedback'));
   assert.ok(setupScript.includes('Quickstart CN feedback: Windows + Photoshop'));
   assert.ok(setupScript.includes('issues/new?template=quickstart_feedback.yml'));
+  assert.ok(setupScript.includes('workflow-fit'));
+  assert.ok(setupScript.includes('issues/new?template=workflow_fit.yml'));
   assert.ok(setupScript.includes('gh issue create'));
 
   const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');
+  const workflowFitTemplate = readText('.github/ISSUE_TEMPLATE/workflow_fit.yml');
   const showcaseTemplate = readText('.github/ISSUE_TEMPLATE/template_showcase.yml');
   const showAndTell = readText('.github/DISCUSSION_TEMPLATE/show-and-tell.md');
   assert.ok(quickstartTemplate.includes('中文快速试跑反馈'));
   assert.ok(quickstartTemplate.includes('quickstart-feedback'));
   assert.ok(quickstartTemplate.includes('127.0.0.1:3001/health'));
   assert.ok(quickstartTemplate.includes('真实 PSD 模板、真实商品图、账号信息、token、后台截图或任何敏感业务资料'));
+  assert.ok(workflowFitTemplate.includes('PSD 工作流适配反馈'));
+  assert.ok(workflowFitTemplate.includes('workflow-fit'));
+  assert.ok(workflowFitTemplate.includes('净化后的 PSD 结构'));
+  assert.ok(workflowFitTemplate.includes('Excel 字段形状'));
+  assert.ok(workflowFitTemplate.includes('图片命名与匹配规则'));
+  assert.ok(workflowFitTemplate.includes('期望导出结果'));
   assert.ok(showcaseTemplate.includes('SHOWCASE_GUIDE.md'));
   assert.ok(showcaseTemplate.includes('Public safety check'));
   assert.ok(showcaseTemplate.includes('PSD variables'));
@@ -332,6 +349,7 @@ test('公开协作入口不应使用具体敏感业务类别措辞', () => {
     'CODE_OF_CONDUCT.md',
     '.github/ISSUE_TEMPLATE/template_showcase.yml',
     '.github/ISSUE_TEMPLATE/quickstart_feedback.yml',
+    '.github/ISSUE_TEMPLATE/workflow_fit.yml',
     'docs/CONTRIBUTING_CN.md',
     'docs/SHOWCASE_GUIDE.md',
     'docs/TROUBLESHOOTING_CN.md',

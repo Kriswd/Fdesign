@@ -12,6 +12,7 @@ export const PUBLIC_SURFACE_FILES = [
   '.github/ISSUE_TEMPLATE/bug_report.yml',
   '.github/ISSUE_TEMPLATE/feature_request.yml',
   '.github/ISSUE_TEMPLATE/quickstart_feedback.yml',
+  '.github/ISSUE_TEMPLATE/workflow_fit.yml',
   '.github/ISSUE_TEMPLATE/template_showcase.yml',
   '.github/ISSUE_TEMPLATE/config.yml',
   'docs/index.html',

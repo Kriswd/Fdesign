@@ -5,6 +5,7 @@
 ## 1. 先判断是不是你的场景
 
 如果你还不确定自己的流程是否适合 Fdesign，先读 [Fdesign 中文适用场景](./USE_CASES_CN.md)。这页按主图多色号、多画板详情页、字段组合和本机 Photoshop 自动化链路拆解判断标准。
+如果你已经能描述 PSD 结构、Excel 字段和图片命名规则，可以直接提交 [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)。
 
 Fdesign 适合这类工作：
 
@@ -43,6 +44,7 @@ Fdesign 适合这类工作：
 | npm、端口、后端健康检查、前端打不开 | [中文排障清单](./TROUBLESHOOTING_CN.md) |
 | 图片未绑定、角度图错位、图层变量不识别 | [图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例) |
 | `IDAT: incorrect data check`、Photoshop 静默吞任务、批量中途失败 | [Photoshop 导出失败净化样例](./TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例) |
+| 不确定自己的 PSD 结构是否适配 | [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml) |
 | 不知道该提 Issue 还是 Discussion | [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) |
 
 提交反馈前，请把字段名、图片名、图层路径和截图换成公开安全的假数据，不要上传私有 PSD、真实商品图、账号信息、token 或后台截图。
@@ -52,6 +54,7 @@ Fdesign 适合这类工作：
 - 中文贡献指南：[docs/CONTRIBUTING_CN.md](./CONTRIBUTING_CN.md)
 - 公开路线图：[docs/ROADMAP.md](./ROADMAP.md)
 - 试跑反馈模板：[Quickstart feedback issue](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)
+- 工作流适配反馈：[Workflow fit issue](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)
 - Photoshop 导出样例收集：[Issue #10](https://github.com/Kriswd/Fdesign/issues/10)
 - 图片匹配和图层命名样例收集：[Issue #15](https://github.com/Kriswd/Fdesign/issues/15)
 

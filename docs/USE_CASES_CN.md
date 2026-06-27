@@ -84,6 +84,7 @@ Fdesign 的规则链适合处理字段拼接、特殊值覆盖和值映射这类
 
 反馈入口：
 
+- [PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)
 - [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)
 - [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8)
 - [图片匹配和图层命名样例收集](https://github.com/Kriswd/Fdesign/issues/15)

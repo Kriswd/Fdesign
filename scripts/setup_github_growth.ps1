@@ -111,6 +111,7 @@ Ensure-Label -Name 'showcase' -Color '0e8a16' -Description 'Sanitized template/w
 Ensure-Label -Name 'roadmap' -Color '5319e7' -Description 'Public roadmap and planning topics.'
 Ensure-Label -Name 'launch-feedback' -Color 'fbca04' -Description 'Feedback from the V3.0 open-source launch.'
 Ensure-Label -Name 'quickstart-feedback' -Color '1d76db' -Description 'First-run feedback from the Chinese quick start.'
+Ensure-Label -Name 'workflow-fit' -Color '5319e7' -Description 'Sanitized PSD, Excel, image naming, and output fit questions.'
 
 $roadmapBody = @'
 Fdesign V3.0 is now positioned around one public workflow: Excel product data -> batch PSD deliverables.
@@ -176,10 +177,26 @@ $quickstartCnBody = @'
 https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml
 '@
 
+$workflowFitBody = @'
+Use this issue to collect sanitized PSD + Excel workflow fit questions.
+
+Useful details:
+
+- PSD structure: artboards, groups, text variables, image variables, product slots.
+- Excel fields: field names, fake values, naming fields, rule-chain fields.
+- Image naming: style, color, angle, sequence, and matching rules.
+- Expected outputs: PSD, PSB, PNG, JPEG, artboard names, folder layout.
+- Current blocker: the one question that prevents you from trying Fdesign.
+
+Please do not upload private PSD files, real product images, credentials, tokens, backend screenshots, or unredacted fields. For structured submissions, use:
+https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml
+'@
+
 Ensure-Issue -Title 'Roadmap: V3.0 ecommerce PSD automation workflow' -Body $roadmapBody -Labels @('roadmap', 'help wanted')
 Ensure-Issue -Title 'Showcase request: share sanitized ecommerce PSD workflows' -Body $showcaseBody -Labels @('showcase', 'help wanted')
 Ensure-Issue -Title 'Good first issue: improve quick start from a fresh Windows run' -Body $docsBody -Labels @('good first issue', 'documentation')
 Ensure-Issue -Title 'Launch feedback: README, demo, and first-run clarity' -Body $feedbackBody -Labels @('launch-feedback', 'documentation')
 Ensure-Issue -Title 'Quickstart CN feedback: Windows + Photoshop 首次启动' -Body $quickstartCnBody -Labels @('quickstart-feedback', 'documentation', 'help wanted')
+Ensure-Issue -Title 'Workflow fit: collect sanitized PSD + Excel patterns' -Body $workflowFitBody -Labels @('workflow-fit', 'documentation', 'help wanted')
 
 Write-Host "GitHub growth setup completed for $Repo"

@@ -15,6 +15,7 @@
 - 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 `docs/START_HERE_CN.md`，用于承接国内社区、文章和朋友转发过来的首次访问者，按演示、试跑、案例和反馈分流。
 - 已新增 `docs/USE_CASES_CN.md`，用于回答国内用户常见的“我的 PSD 批量作图流程是否适合 Fdesign”。
+- 已新增 `.github/ISSUE_TEMPLATE/workflow_fit.yml`，用于收集公开安全的 PSD 结构、Excel 字段、图片命名和导出结果适配反馈。
 - 已新增 `docs/llms.txt`，用于给搜索、AI 摘要和社区转发场景提供机器可读的公开项目摘要。
 - 已新增 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`，用于指导用户用公开演示数据从零制作最小 PSD 测试模板。
 - 最小 PSD 教程已嵌入公开安全的绑定关系图和主工作流截图，避免首批用户只看到空态说明。
