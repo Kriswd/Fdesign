@@ -43,6 +43,7 @@ Domestic first-run path:
 - Chinese quick start: `docs/QUICKSTART_CN.md`
 - Minimal PSD walkthrough: `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`
 - Troubleshooting checklist: `docs/TROUBLESHOOTING_CN.md`
+- Workflow fit feedback: `https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml`
 
 ## Known limitations
 

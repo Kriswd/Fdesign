@@ -189,6 +189,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const releaseNotes = readText('docs/github/release-v3.0.0.md');
   assert.ok(releaseNotes.includes('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
   assert.ok(releaseNotes.includes('docs/TROUBLESHOOTING_CN.md'));
+  assert.ok(releaseNotes.includes('issues/new?template=workflow_fit.yml'));
 
   const readme = readText('README.md');
   const demo = readText('docs/DEMO.md');
