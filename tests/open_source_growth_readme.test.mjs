@@ -115,6 +115,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
     '.github/ISSUE_TEMPLATE/bug_report.yml',
     '.github/ISSUE_TEMPLATE/feature_request.yml',
     '.github/ISSUE_TEMPLATE/template_showcase.yml',
+    '.github/ISSUE_TEMPLATE/quickstart_feedback.yml',
     '.github/ISSUE_TEMPLATE/config.yml',
     '.github/DISCUSSION_TEMPLATE/show-and-tell.md',
     '.github/PULL_REQUEST_TEMPLATE.md',
@@ -140,5 +141,12 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('photoshop-automation'));
   assert.ok(setupScript.includes('search/issues?q='));
   assert.ok(setupScript.includes('good first issue'));
+  assert.ok(setupScript.includes('quickstart-feedback'));
   assert.ok(setupScript.includes('gh issue create'));
+
+  const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');
+  assert.ok(quickstartTemplate.includes('中文快速试跑反馈'));
+  assert.ok(quickstartTemplate.includes('quickstart-feedback'));
+  assert.ok(quickstartTemplate.includes('127.0.0.1:3001/health'));
+  assert.ok(quickstartTemplate.includes('真实 PSD 模板、真实商品图、客户数据、订单信息'));
 });

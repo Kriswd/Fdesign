@@ -1,0 +1,96 @@
+name: 中文快速试跑反馈
+description: 国内用户按中文快速试跑文档启动项目后的反馈。
+title: "[Quickstart CN]: "
+labels: ["quickstart-feedback", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你试跑 Fdesign。请先按 `docs/QUICKSTART_CN.md` 走一遍，再提交这里。
+
+        请不要上传真实 PSD 模板、真实商品图、客户数据、订单信息、账号信息、token、店铺后台截图或任何敏感业务资料。截图和日志请先脱敏。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公开信息确认
+      options:
+        - label: 我已经移除真实商品图、客户数据、账号信息、订单信息、私有 PSD 和敏感业务资料。
+          required: true
+  - type: input
+    id: fdesign_version
+    attributes:
+      label: Fdesign version
+      description: 后端 `/health` 或 README 中显示的版本。
+      placeholder: V3.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 x64
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js / npm version
+      placeholder: Node.js 20.x / npm 10.x
+    validations:
+      required: true
+  - type: input
+    id: photoshop
+    attributes:
+      label: Photoshop version
+      placeholder: Photoshop 2024 / Photoshop 2025 / 未安装
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 卡在哪一步？
+      options:
+        - npm install
+        - npm run server
+        - /health 健康检查
+        - npm run dev
+        - 前端页面打开
+        - 公开演示包理解
+        - 简化 PSD 试跑
+        - Photoshop 导出
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最短复现步骤
+      description: 写出你实际执行的最短步骤，越具体越容易定位。
+      placeholder: |
+        1. npm install
+        2. npm run server
+        3. 打开 http://127.0.0.1:3001/health
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望看到什么？
+      placeholder: 例如：/health 返回 JSON 并显示 3.0；前端能打开工作台；Photoshop 能导出一条简化 PSD 记录。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际发生了什么？
+      description: 请贴出脱敏后的错误摘要、终端输出关键行或页面提示。
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: 脱敏截图或日志
+      description: 可选。不要上传真实 PSD、真实商品图、客户数据、订单信息、账号信息或 token。
+    validations:
+      required: false

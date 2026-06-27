@@ -86,7 +86,7 @@ npm run dev
 - 文档、截图、快速开始和故障排查改进。
 - 面向新手的 issue、示例数据和模板说明。
 
-开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先在 Discussions 里描述你的工作流。
+国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先在 Discussions 里描述你的工作流。
 
 ## 服务入口
 

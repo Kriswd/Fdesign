@@ -110,6 +110,7 @@ Ensure-Label -Name 'documentation' -Color '0075ca' -Description 'Documentation, 
 Ensure-Label -Name 'showcase' -Color '0e8a16' -Description 'Sanitized template/workflow examples from users.'
 Ensure-Label -Name 'roadmap' -Color '5319e7' -Description 'Public roadmap and planning topics.'
 Ensure-Label -Name 'launch-feedback' -Color 'fbca04' -Description 'Feedback from the V3.0 open-source launch.'
+Ensure-Label -Name 'quickstart-feedback' -Color '1d76db' -Description 'First-run feedback from the Chinese quick start.'
 
 $roadmapBody = @'
 Fdesign V3.0 is now positioned around one public workflow: Excel product data -> batch PSD deliverables.
