@@ -42,6 +42,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/robots.txt',
     'docs/sitemap.xml',
     'docs/assets/fdesign-logo.svg',
+    'docs/assets/fdesign-social-card.png',
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
     'docs/QUICKSTART_CN.md',
@@ -94,6 +95,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));
   assert.equal(page.includes('./DEMO.html'), false);
   assert.ok(page.includes('og:image'));
+  assert.ok(page.includes('https://kriswd.github.io/Fdesign/assets/fdesign-social-card.png'));
   assert.ok(page.includes('<link rel="canonical" href="https://kriswd.github.io/Fdesign/">'));
   assert.ok(page.includes('name="keywords"'));
   assert.ok(page.includes('PSD批量生成'));
@@ -107,7 +109,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   const sitemap = readText('docs/sitemap.xml');
   assert.ok(robots.includes('Sitemap: https://kriswd.github.io/Fdesign/sitemap.xml'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/</loc>'));
-  assert.ok(sitemap.includes('<lastmod>2026-06-22</lastmod>'));
+  assert.ok(sitemap.includes('<lastmod>2026-06-27</lastmod>'));
 });
 
 test('GitHub 社区入口与设置脚本应可重复执行', () => {
