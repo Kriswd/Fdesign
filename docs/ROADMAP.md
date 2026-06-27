@@ -26,7 +26,7 @@
 - 改进 README 的英文摘要和术语。
 - 提交一个不含隐私和版权风险的模板使用案例说明。
 - 给 `docs/DEMO.md` 补充截图标注或更清楚的操作步骤。
-- 复现并整理一个 Photoshop 导出失败的最小案例。
+- Done: 复现并整理一个 Photoshop 导出失败的公开排障样例表，后续继续收真实净化案例。
 - 修正运行文档中不清楚的 Windows/Node/Photoshop 环境说明。
 
 ## Tracked Contribution Tasks
@@ -34,7 +34,7 @@
 - Done: [Good first issue: add a public GIF demo to README and Pages](https://github.com/Kriswd/Fdesign/issues/13) -> [workflow GIF](./assets/fdesign-workflow-demo.gif)
 - [Showcase request: add multi-color main image export case](https://github.com/Kriswd/Fdesign/issues/12)
 - [Showcase request: add multi-artboard batch export case](https://github.com/Kriswd/Fdesign/issues/14)
-- [Help wanted: collect Photoshop export troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/10)
+- In progress: [Help wanted: collect Photoshop export troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/10) -> [导出失败净化样例](./TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例)
 
 ## How We Decide Priority
 

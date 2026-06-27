@@ -91,6 +91,7 @@ npm run dev
 - [净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)
 - [净化案例提交指南](./docs/SHOWCASE_GUIDE.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
+- [Photoshop 导出失败净化样例](./docs/TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例)
 - [V3.0 Release](https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0)
 - [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8)
 - [FAQ](./docs/FAQ.md)
@@ -110,6 +111,7 @@ npm run dev
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
 提交前建议先过一遍 [中文排障清单](./docs/TROUBLESHOOTING_CN.md)，这样反馈里能直接带上最短复现步骤和净化后的错误摘要。
+如果遇到 `IDAT: incorrect data check`、Photoshop 静默吞任务、批量中途失败或 PSD/PSB 保存失败，可以先对照 [Photoshop 导出失败净化样例](./docs/TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例) 整理可公开信息。
 想提交问题、案例或 PR 的中文用户，可以直接看 [Fdesign 中文贡献指南](./docs/CONTRIBUTING_CN.md)。
 
 ## 服务入口

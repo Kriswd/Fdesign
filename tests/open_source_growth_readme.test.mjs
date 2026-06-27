@@ -105,6 +105,11 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(troubleshooting.includes('Fdesign 中文排障清单'));
   assert.ok(troubleshooting.includes('npm config set registry https://registry.npmmirror.com'));
   assert.ok(troubleshooting.includes('Photoshop 导出失败'));
+  assert.ok(troubleshooting.includes('Photoshop 导出失败净化样例'));
+  assert.ok(troubleshooting.includes('IDAT: incorrect data check'));
+  assert.ok(troubleshooting.includes('Photoshop 静默吞任务'));
+  assert.ok(troubleshooting.includes('批量中途失败'));
+  assert.ok(troubleshooting.includes('Photoshop 导出排障样例收集 issue'));
   assert.ok(troubleshooting.includes('不要公开私有 PSD、账号信息、敏感业务资料'));
   assert.ok(faq.includes('Windows 10/11 x64'));
   assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
@@ -112,6 +117,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(faq.includes('[公开净化案例库](./showcases/README.md)'));
   assert.ok(faq.includes('[眼镜商品详情页批量套版案例](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(faq.includes('[中文排障清单](./TROUBLESHOOTING_CN.md)'));
+  assert.ok(faq.includes('IDAT: incorrect data check'));
   assert.ok(faq.includes('field-map.example.json'));
   assert.ok(showcaseGuide.includes('Fdesign 净化案例提交指南'));
   assert.ok(showcaseGuide.includes('不要提交什么'));
@@ -166,6 +172,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.equal(readme.includes('docs/PROMOTION_KIT_CN.md'), false);
   assert.ok(readme.includes('[Fdesign 中文贡献指南](./docs/CONTRIBUTING_CN.md)'));
   assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
+  assert.ok(readme.includes('[Photoshop 导出失败净化样例](./docs/TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
   assert.equal(readme.includes(`${launchDir}/`), false);
@@ -190,6 +197,8 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
+  assert.ok(page.includes('导出失败净化样例'));
+  assert.ok(page.includes('IDAT 报错'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/ROADMAP.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
