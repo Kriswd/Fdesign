@@ -19,10 +19,10 @@
 
 ## 后续最值得补的案例
 
-- 电商主图多色号批量导出。
-- 多画板详情页批量导出。
+- [电商主图多色号批量导出](https://github.com/Kriswd/Fdesign/issues/12)。
+- [多画板详情页批量导出](https://github.com/Kriswd/Fdesign/issues/14)。
 - 活动图或社媒图批量改字段。
-- Photoshop 导出失败的最小复现案例。
+- [Photoshop 导出失败的最小复现案例](https://github.com/Kriswd/Fdesign/issues/10)。
 - 图片匹配失败的净化复现案例。
 
 ## 提交你自己的净化案例

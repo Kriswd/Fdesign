@@ -16,6 +16,7 @@ test('公开仓库应只保留指标脚本，不公开内部推广文档', () =>
   const internalPlansDir = ['docs', 'superpowers'].join('/');
 
   assert.equal(fileExists('scripts/capture_github_growth_metrics.ps1'), true);
+  assert.equal(fileExists('docs/PROMOTION_KIT_CN.md'), false);
   assert.equal(fileExists(launchDir), false);
   assert.equal(fileExists(internalPlansDir), false);
 });
@@ -27,6 +28,7 @@ test('公开 README 和检查清单不应暴露内部推广入口', () => {
   const gitignore = readText('.gitignore');
 
   assert.equal(readme.includes(launchDir), false);
+  assert.equal(readme.includes('docs/PROMOTION_KIT_CN.md'), false);
   assert.equal(readme.includes('国内推广作战手册'), false);
   assert.equal(checklist.includes(launchDir), false);
   assert.ok(checklist.includes('内部运营、渠道排期、发布文案和复盘资料不得提交到公开仓库'));

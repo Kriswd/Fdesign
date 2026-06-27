@@ -29,6 +29,13 @@
 - 复现并整理一个 Photoshop 导出失败的最小案例。
 - 修正运行文档中不清楚的 Windows/Node/Photoshop 环境说明。
 
+## Tracked Contribution Tasks
+
+- [Good first issue: add a public GIF demo to README and Pages](https://github.com/Kriswd/Fdesign/issues/13)
+- [Showcase request: add multi-color main image export case](https://github.com/Kriswd/Fdesign/issues/12)
+- [Showcase request: add multi-artboard batch export case](https://github.com/Kriswd/Fdesign/issues/14)
+- [Help wanted: collect Photoshop export troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/10)
+
 ## How We Decide Priority
 
 优先处理能让真实电商图像生产更稳定、更容易上手、更容易复用的问题。排序时会看三个维度：是否影响导出结果、是否阻碍新用户快速启动、是否能帮助更多模板场景复用。
