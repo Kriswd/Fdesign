@@ -105,6 +105,11 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(troubleshooting.includes('Fdesign 中文排障清单'));
   assert.ok(troubleshooting.includes('npm config set registry https://registry.npmmirror.com'));
   assert.ok(troubleshooting.includes('Photoshop 导出失败'));
+  assert.ok(troubleshooting.includes('图片匹配和图层命名净化样例'));
+  assert.ok(troubleshooting.includes('图片匹配和图层命名排障样例收集 issue'));
+  assert.ok(troubleshooting.includes('https://github.com/Kriswd/Fdesign/issues/15'));
+  assert.ok(troubleshooting.includes('角度匹配错位'));
+  assert.ok(troubleshooting.includes('Hero/{img:main}'));
   assert.ok(troubleshooting.includes('Photoshop 导出失败净化样例'));
   assert.ok(troubleshooting.includes('IDAT: incorrect data check'));
   assert.ok(troubleshooting.includes('Photoshop 静默吞任务'));
@@ -172,6 +177,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.equal(readme.includes('docs/PROMOTION_KIT_CN.md'), false);
   assert.ok(readme.includes('[Fdesign 中文贡献指南](./docs/CONTRIBUTING_CN.md)'));
   assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
+  assert.ok(readme.includes('[图片匹配和图层命名净化样例](./docs/TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例)'));
   assert.ok(readme.includes('[Photoshop 导出失败净化样例](./docs/TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
@@ -197,6 +203,8 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
+  assert.ok(page.includes('图片匹配和图层命名'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/issues/15'));
   assert.ok(page.includes('导出失败净化样例'));
   assert.ok(page.includes('IDAT 报错'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
@@ -228,6 +236,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/13'));
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/12'));
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/14'));
+  assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/15'));
 });
 
 test('GitHub 社区入口与设置脚本应可重复执行', () => {

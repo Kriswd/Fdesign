@@ -11,6 +11,7 @@
 
 - 增加更多开源可复现的模板配置示例。
 - 补充从空白 PSD 到批量导出的完整图文教程。
+- 提炼图片匹配和图层命名失败的公开排障样例。
 - 提炼常见 Photoshop 导出失败的排查清单。
 - 继续改进短视频和排障案例，让非开发者更快完成第一次试跑。
 
@@ -26,6 +27,7 @@
 - 改进 README 的英文摘要和术语。
 - 提交一个不含隐私和版权风险的模板使用案例说明。
 - 给 `docs/DEMO.md` 补充截图标注或更清楚的操作步骤。
+- In progress: 收集图片匹配、角度错位、变量未绑定和图层命名失败的净化复现。
 - Done: 复现并整理一个 Photoshop 导出失败的公开排障样例表，后续继续收真实净化案例。
 - 修正运行文档中不清楚的 Windows/Node/Photoshop 环境说明。
 
@@ -34,6 +36,7 @@
 - Done: [Good first issue: add a public GIF demo to README and Pages](https://github.com/Kriswd/Fdesign/issues/13) -> [workflow GIF](./assets/fdesign-workflow-demo.gif)
 - [Showcase request: add multi-color main image export case](https://github.com/Kriswd/Fdesign/issues/12)
 - [Showcase request: add multi-artboard batch export case](https://github.com/Kriswd/Fdesign/issues/14)
+- In progress: [Help wanted: collect image matching and layer naming troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/15) -> [图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例)
 - In progress: [Help wanted: collect Photoshop export troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/10) -> [导出失败净化样例](./TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例)
 
 ## How We Decide Priority

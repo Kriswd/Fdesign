@@ -20,6 +20,7 @@
 - 已新增 `docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md`，用于承接同款多色主图批量导出的常见场景。
 - 已新增 `docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md`，用于承接多画板详情页批量导出和画板变量组织场景。
 - 已新增 `docs/TROUBLESHOOTING_CN.md`，用于承接国内用户首次启动、端口、图片匹配和 Photoshop 导出排障。
+- 已在 `docs/TROUBLESHOOTING_CN.md` 补充图片匹配和图层命名净化样例，覆盖图片未绑定、角度错位、商品位复用、变量未识别和字段错列。
 - 已在 `docs/TROUBLESHOOTING_CN.md` 补充 Photoshop 导出失败净化样例，覆盖 `IDAT: incorrect data check`、静默吞任务、批量中途失败和 PSD/PSB 保存失败。
 - 已新增 `docs/SHOWCASE_GUIDE.md`，用于指导用户提交公开安全的净化模板案例和最小复现。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
@@ -49,5 +50,6 @@
 - 给后台管理和任务模板导入导出补充更稳定的 Playwright 主流程烟测。
 - 将版本展示继续收敛到自动生成流程，减少手工发布步骤。
 - 为 `/health` 增加构建 commit 和构建时间，方便定位运行版本。
+- 基于第一批真实用户反馈，继续补充图片匹配、图层命名和字段映射的净化复现案例。
 - 基于第一批真实用户反馈，继续补充更多 Photoshop 导出失败的净化复现案例和 FAQ。
 - 每周用 GitHub traffic、clones、issues 和真实反馈复盘公开页与 README 转化质量，而不是只看 Star 数。
