@@ -159,9 +159,27 @@ Use this issue to report V3.0 launch feedback:
 Please include only public-safe examples.
 '@
 
+$quickstartCnBody = @'
+中文快速试跑反馈集中帖：
+
+如果你是第一次在 Windows + Photoshop 环境里启动 Fdesign，可以先按 docs/QUICKSTART_CN.md 走一遍。
+
+请优先反馈这些信息：
+
+- npm install / npm run server / npm run dev 卡在哪一步。
+- http://127.0.0.1:3001/health 是否能返回 JSON。
+- Photoshop 是否能手动打开，是否卡在登录、授权、更新或弹窗。
+- 公开演示包是否能帮你理解 Excel 字段、PSD 变量和商品图的关系。
+- 哪一步会影响你继续试用、Star、分享或提交 PR。
+
+请不要上传真实 PSD 模板、真实商品图、客户数据、订单信息、账号信息、token、店铺后台截图或任何敏感业务资料。更完整的反馈可以使用中文试跑反馈模板：
+https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml
+'@
+
 Ensure-Issue -Title 'Roadmap: V3.0 ecommerce PSD automation workflow' -Body $roadmapBody -Labels @('roadmap', 'help wanted')
 Ensure-Issue -Title 'Showcase request: share sanitized ecommerce PSD workflows' -Body $showcaseBody -Labels @('showcase', 'help wanted')
 Ensure-Issue -Title 'Good first issue: improve quick start from a fresh Windows run' -Body $docsBody -Labels @('good first issue', 'documentation')
 Ensure-Issue -Title 'Launch feedback: README, demo, and first-run clarity' -Body $feedbackBody -Labels @('launch-feedback', 'documentation')
+Ensure-Issue -Title 'Quickstart CN feedback: Windows + Photoshop 首次启动' -Body $quickstartCnBody -Labels @('quickstart-feedback', 'documentation', 'help wanted')
 
 Write-Host "GitHub growth setup completed for $Repo"

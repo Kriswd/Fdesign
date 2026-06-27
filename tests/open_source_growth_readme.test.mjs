@@ -142,6 +142,8 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('search/issues?q='));
   assert.ok(setupScript.includes('good first issue'));
   assert.ok(setupScript.includes('quickstart-feedback'));
+  assert.ok(setupScript.includes('Quickstart CN feedback: Windows + Photoshop'));
+  assert.ok(setupScript.includes('issues/new?template=quickstart_feedback.yml'));
   assert.ok(setupScript.includes('gh issue create'));
 
   const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');
