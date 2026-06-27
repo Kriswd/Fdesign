@@ -16,6 +16,8 @@ Turns Excel product data into batch PSD deliverables through a local Photoshop a
 
 项目页：<https://kriswd.github.io/Fdesign/>
 
+B站演示视频：<https://www.bilibili.com/video/BV1YDTA6nEeN/>
+
 V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 
 中文试跑讨论：<https://github.com/Kriswd/Fdesign/discussions/8>
@@ -74,6 +76,7 @@ npm run dev
 
 ## 完整演示
 
+- [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)

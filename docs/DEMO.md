@@ -1,5 +1,7 @@
 # Fdesign Demo
 
+演示视频：<https://www.bilibili.com/video/BV1YDTA6nEeN/>
+
 ## 主工作流截图
 
 ![闪图 Fdesign 工作台](../public/screenshots/fdesign-workbench-showcase.png)
@@ -27,6 +29,7 @@
 
 ## 下一步
 
+- 先看 [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)，快速理解画布、绑定区和数据控制台如何配合。
 - 按 README 的快速开始在本地启动项目。
 - 下载或查看 [公开演示包](./demo-kit/README.md)，用净化后的示例数据理解字段映射方式。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
