@@ -46,6 +46,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
     'docs/QUICKSTART_CN.md',
+    'docs/TROUBLESHOOTING_CN.md',
     'docs/SHOWCASE_GUIDE.md',
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
@@ -61,6 +62,7 @@ test('公开演示文档与社区素材应齐备', () => {
 
   const demoKit = readText('docs/demo-kit/README.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
+  const troubleshooting = readText('docs/TROUBLESHOOTING_CN.md');
   const faq = readText('docs/FAQ.md');
   const showcaseGuide = readText('docs/SHOWCASE_GUIDE.md');
   assert.ok(demoKit.includes('净化演示包'));
@@ -69,8 +71,13 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(quickstart.includes('npm config set registry https://registry.npmmirror.com'));
   assert.ok(quickstart.includes('http://127.0.0.1:3001/health'));
   assert.ok(quickstart.includes('不包含真实商品图、客户数据、账号信息、订单信息或私有 PSD'));
+  assert.ok(troubleshooting.includes('Fdesign 中文排障清单'));
+  assert.ok(troubleshooting.includes('npm config set registry https://registry.npmmirror.com'));
+  assert.ok(troubleshooting.includes('Photoshop 导出失败'));
+  assert.ok(troubleshooting.includes('不要公开私有 PSD、客户资料、订单、报价'));
   assert.ok(faq.includes('Windows 10/11 x64'));
   assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(faq.includes('[中文排障清单](./TROUBLESHOOTING_CN.md)'));
   assert.ok(faq.includes('field-map.example.json'));
   assert.ok(showcaseGuide.includes('Fdesign 净化案例提交指南'));
   assert.ok(showcaseGuide.includes('不要提交什么'));
@@ -80,6 +87,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const launchDir = ['.', 'docs', 'launch'].join('/');
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
+  assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
   assert.equal(readme.includes(`${launchDir}/`), false);
@@ -97,6 +105,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));

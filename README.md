@@ -73,6 +73,7 @@ npm run dev
 后端读取当前 shell 中的环境变量；前端本地变量可参考 `.env.example`。生产模式启用后台会话前，请先设置足够长的 `ADMIN_AUTH_SECRET` 并收紧允许访问的来源。
 
 国内用户第一次试跑建议按 [中文快速试跑](./docs/QUICKSTART_CN.md) 走一遍，先确认 Node.js、前后端端口、Photoshop 调度和公开演示包，再接入真实 PSD 模板。
+如果启动、图片匹配或 Photoshop 导出卡住，可以按 [中文排障清单](./docs/TROUBLESHOOTING_CN.md) 从依赖、端口、健康检查到导出链路逐项定位。
 
 ## 完整演示
 
@@ -81,6 +82,7 @@ npm run dev
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
 - [净化案例提交指南](./docs/SHOWCASE_GUIDE.md)
+- [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [V3.0 Release](https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0)
 - [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8)
 - [FAQ](./docs/FAQ.md)
@@ -99,6 +101,7 @@ npm run dev
 提交真实模板/工作流案例前，请先按 [净化案例提交指南](./docs/SHOWCASE_GUIDE.md) 处理字段、截图和素材，避免公开私有 PSD、客户数据、订单、报价或授权不清的图片。
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
+提交前建议先过一遍 [中文排障清单](./docs/TROUBLESHOOTING_CN.md)，这样反馈里能直接带上最短复现步骤和净化后的错误摘要。
 
 ## 服务入口
 
@@ -126,6 +129,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [架构说明](./docs/ARCHITECTURE.md)
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
+- [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [FAQ](./docs/FAQ.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)

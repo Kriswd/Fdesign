@@ -247,3 +247,4 @@
 [2026-06-22] Task: 补齐公开协作治理入口 | Changes: 新增 `CODE_OF_CONDUCT.md` 与 `.github/PULL_REQUEST_TEMPLATE.md`，明确社区行为、PR 验证项和公开数据净化检查；更新开源增长测试锁定行为准则与 PR 模板存在。 | Risk: Low. 仅新增公开协作文档和测试断言，不改变应用运行、PSD 导出、后台 API、GitHub 仓库设置或发布包逻辑。
 [2026-06-22] Task: 补齐国内传播 SEO 基础设施 | Changes: GitHub Pages 增加中文关键词、canonical、Open Graph/Twitter 分享字段与 SoftwareApplication JSON-LD；新增 `docs/robots.txt` 和 `docs/sitemap.xml`，并更新开源增长测试锁定搜索与分享入口。 | Risk: Low. 仅修改静态公开页元信息和搜索索引文件，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-22] Task: 降低国内用户首次试跑摩擦 | Changes: 新增 `docs/QUICKSTART_CN.md`，覆盖 Windows/Node.js/npm 镜像、前后端启动、健康检查、Photoshop 调度、公开演示包和净化反馈；README、FAQ 与 GitHub Pages 增加中文快速试跑入口，并更新开源增长测试锁定入口可见。 | Risk: Low. 仅新增公开试跑文档和静态入口，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
+[2026-06-28] Task: 补齐国内用户公开排障路径 | Changes: 新增 `docs/TROUBLESHOOTING_CN.md`，覆盖 npm install、后端健康检查、前端启动、公开演示包理解、图片匹配和 Photoshop 导出失败排查；README、FAQ、中文快速试跑、GitHub Pages 和开源检查清单增加排障入口。 | Risk: Low. 仅新增公开支持文档和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。

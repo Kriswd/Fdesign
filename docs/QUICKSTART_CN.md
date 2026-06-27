@@ -145,5 +145,6 @@ Excel 列 -> PSD 文本变量 / 图片变量 -> 导出命名
 反馈入口：
 
 - [提交中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)
+- [中文排障清单](./TROUBLESHOOTING_CN.md)
 - [GitHub Issues](https://github.com/Kriswd/Fdesign/issues)
 - [FAQ](./FAQ.md)
