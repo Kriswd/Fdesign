@@ -46,6 +46,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
     'docs/QUICKSTART_CN.md',
+    'docs/SHOWCASE_GUIDE.md',
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
     'docs/demo-kit/sample-products.csv',
@@ -61,6 +62,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const demoKit = readText('docs/demo-kit/README.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
   const faq = readText('docs/FAQ.md');
+  const showcaseGuide = readText('docs/SHOWCASE_GUIDE.md');
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
@@ -70,11 +72,15 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(faq.includes('Windows 10/11 x64'));
   assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(faq.includes('field-map.example.json'));
+  assert.ok(showcaseGuide.includes('Fdesign 净化案例提交指南'));
+  assert.ok(showcaseGuide.includes('不要提交什么'));
+  assert.ok(showcaseGuide.includes('Template showcase issue'));
 
   const readme = readText('README.md');
   const launchDir = ['.', 'docs', 'launch'].join('/');
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
+  assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
   assert.equal(readme.includes(`${launchDir}/`), false);
 });
@@ -91,6 +97,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));
   assert.equal(page.includes('./DEMO.html'), false);
@@ -149,8 +156,15 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('gh issue create'));
 
   const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');
+  const showcaseTemplate = readText('.github/ISSUE_TEMPLATE/template_showcase.yml');
+  const showAndTell = readText('.github/DISCUSSION_TEMPLATE/show-and-tell.md');
   assert.ok(quickstartTemplate.includes('中文快速试跑反馈'));
   assert.ok(quickstartTemplate.includes('quickstart-feedback'));
   assert.ok(quickstartTemplate.includes('127.0.0.1:3001/health'));
   assert.ok(quickstartTemplate.includes('真实 PSD 模板、真实商品图、客户数据、订单信息'));
+  assert.ok(showcaseTemplate.includes('SHOWCASE_GUIDE.md'));
+  assert.ok(showcaseTemplate.includes('Public safety check'));
+  assert.ok(showcaseTemplate.includes('PSD variables'));
+  assert.ok(showAndTell.includes('Sanitization guide'));
+  assert.ok(showAndTell.includes('## PSD variables'));
 });

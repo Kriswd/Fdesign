@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Please share only sanitized examples. Do not upload private PSDs, private product images, fonts, credentials, or paid assets.
+        Sanitization guide: https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md
   - type: input
     id: template_type
     attributes:
@@ -22,6 +23,14 @@ body:
       placeholder: style_no, color_no, title, product_image_45, product_image_front...
     validations:
       required: true
+  - type: textarea
+    id: psd_variables
+    attributes:
+      label: PSD variables
+      description: Which text and image variables are involved? Please describe the structure instead of uploading a private PSD.
+      placeholder: "Text: model_no, color_no, product_title. Image: product_front, product_side."
+    validations:
+      required: false
   - type: checkboxes
     id: output_formats
     attributes:
@@ -45,3 +54,12 @@ body:
       description: What should other users learn from this template setup?
     validations:
       required: true
+  - type: checkboxes
+    id: public_safety
+    attributes:
+      label: Public safety check
+      options:
+        - label: I removed private PSDs, customer data, orders, quotes, contracts, credentials, and paid assets.
+          required: true
+        - label: Screenshots and logs are sanitized.
+          required: true

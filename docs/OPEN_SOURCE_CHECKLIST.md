@@ -13,6 +13,7 @@
 - 公开分支会使用净化后的历史发布，避免旧资料随可见性切换一并暴露。
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
 - 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
+- 已新增 `docs/SHOWCASE_GUIDE.md`，用于指导用户提交公开安全的净化模板案例和最小复现。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。
 - GitHub Pages 顶部导航已加入“选购服务”入口，店铺仍作为次级服务入口，不影响开源本地试跑。
 - `package.json` 包名已从旧工程名收敛为 `fdesign`，并补充 PSD/Photoshop/Excel 自动化关键词。

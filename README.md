@@ -80,6 +80,7 @@ npm run dev
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
+- [净化案例提交指南](./docs/SHOWCASE_GUIDE.md)
 - [V3.0 Release](https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0)
 - [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8)
 - [FAQ](./docs/FAQ.md)
@@ -94,6 +95,8 @@ npm run dev
 - 真实模板/工作流案例，帮助项目沉淀更多电商图像生产场景。
 - 文档、截图、快速开始和故障排查改进。
 - 面向新手的 issue、示例数据和模板说明。
+
+提交真实模板/工作流案例前，请先按 [净化案例提交指南](./docs/SHOWCASE_GUIDE.md) 处理字段、截图和素材，避免公开私有 PSD、客户数据、订单、报价或授权不清的图片。
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
 
