@@ -22,6 +22,7 @@
 - GitHub Pages 顶部导航已加入“选购服务”入口，店铺仍作为次级服务入口，不影响开源本地试跑。
 - `package.json` 包名已从旧工程名收敛为 `fdesign`，并补充 PSD/Photoshop/Excel 自动化关键词。
 - 已保留 `scripts/capture_github_growth_metrics.ps1` 用于本地记录真实 Star、访问、克隆和社区反馈。
+- 已新增 `npm run verify:public-surface`，用于发布前检查公开入口、GitHub 模板和增长设置脚本，防止内部发布材料或具体私有数据类别误入公开面。
 - 内部运营、渠道排期、发布文案和复盘资料不得提交到公开仓库；本地只放在 `private/` 或 `internal/`。
 
 ## 店铺入口配置
@@ -31,7 +32,7 @@
 
 ## 开源前必须确认
 
-- 运行 `npm run lint`、`npm run build` 与 `npm test`。
+- 运行 `npm run verify:public-surface`、`npm run lint`、`npm run build` 与 `npm test`。
 - 启动前后端，检查前端界面和 `/health` 的真实响应。
 - 用 Git 跟踪列表复查公开树，不要包含模板素材、字体、运行输出、日志、真实环境变量或私有资料。
 - 确认 README 中的运行条件仍准确，尤其是 Photoshop 宿主依赖边界。

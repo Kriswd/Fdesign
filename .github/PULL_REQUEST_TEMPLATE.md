@@ -21,6 +21,6 @@
 
 ## Public Data Check
 
-- [ ] No private PSD templates, real product images, credentials, tokens, sensitive business material, or generated export artifacts are included.
+- [ ] No private PSD templates, real product images, credentials, tokens, unredacted private workflow details, or generated export artifacts are included.
 - [ ] Screenshots/logs are sanitized.
 - [ ] Any new public document belongs in README, docs, examples, FAQ, or contribution surfaces rather than internal launch planning.

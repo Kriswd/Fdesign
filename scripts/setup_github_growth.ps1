@@ -135,7 +135,7 @@ Useful examples:
 - Campaign/social image templates.
 - Excel field mapping examples.
 
-Please do not upload private PSD files, product images, paid fonts, credentials, or sensitive business information.
+Please do not upload private PSD files, product images, paid fonts, credentials, or unredacted private workflow details.
 '@
 
 $docsBody = @'
@@ -172,7 +172,7 @@ $quickstartCnBody = @'
 - 公开演示包是否能帮你理解 Excel 字段、PSD 变量和商品图的关系。
 - 哪一步会影响你继续试用、Star、分享或提交 PR。
 
-请不要上传真实 PSD 模板、真实商品图、客户数据、订单信息、账号信息、token、店铺后台截图或任何敏感业务资料。更完整的反馈可以使用中文试跑反馈模板：
+请不要上传真实 PSD 模板、真实商品图、账号信息、token、店铺后台截图、授权不清素材或未净化字段。更完整的反馈可以使用中文试跑反馈模板：
 https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml
 '@
 

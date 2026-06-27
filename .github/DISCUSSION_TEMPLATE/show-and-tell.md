@@ -1,6 +1,6 @@
 # Show and Tell
 
-Share a sanitized Fdesign workflow. Please avoid private PSD files, private data, product images, paid fonts, credentials, and sensitive business information.
+Share a sanitized Fdesign workflow. Please avoid private PSD files, private data, product images, paid fonts, credentials, and unredacted private workflow details.
 
 Sanitization guide: https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md
 

@@ -146,6 +146,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 ## 验证
 
 ```bash
+npm run verify:public-surface
 npm run lint
 npm run build
 npm test

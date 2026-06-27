@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please share only sanitized examples. Do not upload private PSDs, private product images, fonts, credentials, paid assets, or sensitive business material.
+        Please share only sanitized examples. Do not upload private PSDs, private product images, fonts, credentials, paid assets, or unredacted private workflow details.
         Sanitization guide: https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md
   - type: input
     id: template_type
@@ -59,7 +59,7 @@ body:
     attributes:
       label: Public safety check
       options:
-        - label: I removed private PSDs, credentials, paid assets, and sensitive business material.
+        - label: I removed private PSDs, credentials, paid assets, and unredacted private workflow details.
           required: true
         - label: Screenshots and logs are sanitized.
           required: true

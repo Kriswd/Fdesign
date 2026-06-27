@@ -30,6 +30,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "test": "node --test scripts/node-tests.mjs",
+    "verify:public-surface": "node scripts/verify_public_surface.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 3010"
   },
   "dependencies": {

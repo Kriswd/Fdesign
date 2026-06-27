@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug. Please remove any private data, PSD files, product images, tokens, or sensitive business information before sharing logs or screenshots.
+        Thanks for reporting a bug. Please remove any private data, PSD files, product images, tokens, or unredacted private workflow details before sharing logs or screenshots.
   - type: input
     id: version
     attributes:

@@ -210,7 +210,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(conduct.includes('fake stars'));
   assert.ok(prTemplate.includes('Public Data Check'));
   assert.ok(prTemplate.includes('No private PSD templates'));
-  assert.ok(prTemplate.includes('sensitive business material'));
+  assert.ok(prTemplate.includes('unredacted private workflow details'));
 
   const setupScript = readText('scripts/setup_github_growth.ps1');
   assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));
@@ -236,7 +236,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(showcaseTemplate.includes('SHOWCASE_GUIDE.md'));
   assert.ok(showcaseTemplate.includes('Public safety check'));
   assert.ok(showcaseTemplate.includes('PSD variables'));
-  assert.ok(showcaseTemplate.includes('sensitive business material'));
+  assert.ok(showcaseTemplate.includes('unredacted private workflow details'));
   assert.ok(showAndTell.includes('Sanitization guide'));
   assert.ok(showAndTell.includes('## PSD variables'));
 });
