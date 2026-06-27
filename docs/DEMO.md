@@ -2,6 +2,12 @@
 
 演示视频：<https://www.bilibili.com/video/BV1YDTA6nEeN/>
 
+## 工作流 GIF
+
+![闪图 Fdesign 工作流演示](./assets/fdesign-workflow-demo.gif)
+
+这段 GIF 用公开截图说明从 PSD 模板预览、图片变量替换、Excel 字段绑定到批量导出的完整路径。
+
 ## 主工作流截图
 
 ![闪图 Fdesign 工作台](../public/screenshots/fdesign-workbench-showcase.png)

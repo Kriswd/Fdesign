@@ -304,6 +304,12 @@
         padding-top: 0;
       }
 
+      .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
       .screenshot-frame {
         overflow: hidden;
         border: 1px solid var(--line);
@@ -391,6 +397,7 @@
         .workflow,
         .audience-grid,
         .proof-grid,
+        .screenshot-grid,
         .footer-cta {
           grid-template-columns: 1fr;
         }
@@ -494,8 +501,13 @@
 
       <section class="screenshot-band">
         <div class="section-inner">
-          <div class="screenshot-frame">
-            <img src="./assets/fdesign-workbench-showcase.png" alt="Fdesign workbench canvas, binding panel, Excel data console, and export controls">
+          <div class="screenshot-grid">
+            <div class="screenshot-frame">
+              <img src="./assets/fdesign-workflow-demo.gif" alt="Fdesign workflow GIF showing PSD preview, image variable replacement, Excel binding, and batch export">
+            </div>
+            <div class="screenshot-frame">
+              <img src="./assets/fdesign-workbench-showcase.png" alt="Fdesign workbench canvas, binding panel, Excel data console, and export controls">
+            </div>
           </div>
         </div>
       </section>

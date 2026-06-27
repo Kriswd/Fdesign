@@ -24,9 +24,11 @@ V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 
 ## 产品截图
 
+![闪图 Fdesign 工作流演示](./docs/assets/fdesign-workflow-demo.gif)
+
 ![闪图 Fdesign 工作台](./public/screenshots/fdesign-workbench-showcase.png)
 
-上图展示 PSD 画布预览、商品位绑定、Excel 数据控制台与导出入口的主工作流。
+上方 GIF 展示 PSD 模板预览、图片变量替换、Excel 字段绑定和批量导出的核心路径。下方截图展示 PSD 画布预览、商品位绑定、Excel 数据控制台与导出入口的主工作流。
 
 ## 三步工作流
 
@@ -79,6 +81,7 @@ npm run dev
 
 - [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
+- [工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
 - [最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)

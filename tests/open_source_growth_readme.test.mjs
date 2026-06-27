@@ -18,7 +18,9 @@ test('README 首屏应采用电商生产结果导向定位', () => {
   assert.ok(readme.includes('# 闪图 Fdesign V3.0'));
   assert.ok(readme.includes(headline));
   assert.ok(readme.includes('Turns Excel product data into batch PSD deliverables'));
+  assert.ok(readme.includes('![闪图 Fdesign 工作流演示](./docs/assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('![闪图 Fdesign 工作台](./public/screenshots/fdesign-workbench-showcase.png)'));
+  assert.ok(readme.includes('PSD 模板预览、图片变量替换、Excel 字段绑定和批量导出'));
   assert.ok(readme.includes('1. 导入 PSD 模板'));
   assert.ok(readme.includes('2. 绑定 Excel 字段与商品图'));
   assert.ok(readme.includes('3. 批量导出 PSD / PSB / PNG / JPEG'));
@@ -43,6 +45,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/sitemap.xml',
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-social-card.png',
+    'docs/assets/fdesign-workflow-demo.gif',
     'docs/assets/fdesign-workbench-showcase.png',
     'docs/DEMO.md',
     'docs/QUICKSTART_CN.md',
@@ -67,6 +70,10 @@ test('公开演示文档与社区素材应齐备', () => {
   ].forEach((relPath) => {
     assert.equal(fileExists(relPath), true, `${relPath} should exist`);
   });
+
+  const workflowGif = fs.readFileSync(path.resolve(process.cwd(), 'docs/assets/fdesign-workflow-demo.gif'));
+  assert.equal(workflowGif.subarray(0, 6).toString('ascii'), 'GIF89a');
+  assert.ok(workflowGif.length < 900_000);
 
   const demoKit = readText('docs/demo-kit/README.md');
   const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
@@ -145,7 +152,10 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(releaseNotes.includes('docs/TROUBLESHOOTING_CN.md'));
 
   const readme = readText('README.md');
+  const demo = readText('docs/DEMO.md');
   const launchDir = ['.', 'docs', 'launch'].join('/');
+  assert.ok(demo.includes('![闪图 Fdesign 工作流演示](./assets/fdesign-workflow-demo.gif)'));
+  assert.ok(readme.includes('[工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
@@ -169,6 +179,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign'));
   assert.ok(page.includes('在 GitHub 查看并 Star'));
   assert.ok(page.includes('./assets/fdesign-logo.svg'));
+  assert.ok(page.includes('./assets/fdesign-workflow-demo.gif'));
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));

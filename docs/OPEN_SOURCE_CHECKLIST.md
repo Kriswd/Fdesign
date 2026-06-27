@@ -15,6 +15,7 @@
 - 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
 - 已新增 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`，用于指导用户用公开演示数据从零制作最小 PSD 测试模板。
 - 最小 PSD 教程已嵌入公开安全的绑定关系图和主工作流截图，避免首批用户只看到空态说明。
+- 已新增 `docs/assets/fdesign-workflow-demo.gif`，并嵌入 README、GitHub Pages 与 Demo 文档，用公开截图讲清 PSD 模板预览、图片变量替换、Excel 字段绑定和批量导出路径。
 - 已新增 `docs/showcases/README.md` 与 `docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md`，作为公开净化案例库和第一个电商详情页案例。
 - 已新增 `docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md`，用于承接同款多色主图批量导出的常见场景。
 - 已新增 `docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md`，用于承接多画板详情页批量导出和画板变量组织场景。
@@ -47,5 +48,5 @@
 - 给后台管理和任务模板导入导出补充更稳定的 Playwright 主流程烟测。
 - 将版本展示继续收敛到自动生成流程，减少手工发布步骤。
 - 为 `/health` 增加构建 commit 和构建时间，方便定位运行版本。
-- 基于第一批真实用户反馈，补充一套净化后的模板案例教程或 GIF 演示。
+- 基于第一批真实用户反馈，补充 Photoshop 导出失败的净化复现案例和 FAQ。
 - 每周用 GitHub traffic、clones、issues 和真实反馈复盘公开页与 README 转化质量，而不是只看 Star 数。

@@ -12,7 +12,7 @@
 - 增加更多开源可复现的模板配置示例。
 - 补充从空白 PSD 到批量导出的完整图文教程。
 - 提炼常见 Photoshop 导出失败的排查清单。
-- 改进首屏截图、GIF 或短视频演示，让非开发者更快理解价值。
+- 继续改进短视频和排障案例，让非开发者更快完成第一次试跑。
 
 ## Later
 
@@ -31,7 +31,7 @@
 
 ## Tracked Contribution Tasks
 
-- [Good first issue: add a public GIF demo to README and Pages](https://github.com/Kriswd/Fdesign/issues/13)
+- Done: [Good first issue: add a public GIF demo to README and Pages](https://github.com/Kriswd/Fdesign/issues/13) -> [workflow GIF](./assets/fdesign-workflow-demo.gif)
 - [Showcase request: add multi-color main image export case](https://github.com/Kriswd/Fdesign/issues/12)
 - [Showcase request: add multi-artboard batch export case](https://github.com/Kriswd/Fdesign/issues/14)
 - [Help wanted: collect Photoshop export troubleshooting cases](https://github.com/Kriswd/Fdesign/issues/10)
