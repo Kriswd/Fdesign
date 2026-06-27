@@ -8,6 +8,10 @@
 
 这张截图展示了 Fdesign 的核心工作流：左侧是 PSD 画布预览，中间是当前可替换图片变量，右侧是数据绑定与导出入口，底部是 Excel 数据控制台。
 
+## 公开净化案例
+
+如果你想先看一个更接近电商详情页生产的公开场景，可以阅读 [净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)。这个案例使用公开截图和 `docs/demo-kit/` 里的假数据，说明字段、图片变量、商品位和导出格式如何组合。
+
 ## 1. 导入 PSD 模板
 
 在工作台导入 PSD 后，Fdesign 会解析模板中的图层、画板、图片变量和文本变量。模板解析结果会进入本地后端管理，方便后续重复使用。
@@ -33,5 +37,6 @@
 - 按 README 的快速开始在本地启动项目。
 - 下载或查看 [公开演示包](./demo-kit/README.md)，用净化后的示例数据理解字段映射方式。
 - 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 先跑通一条记录，再迁移到真实模板。
+- 阅读 [净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)，理解一个完整电商场景如何拆成字段、图片变量和导出结果。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
 - 分享你的模板案例或问题到 GitHub Issues / Discussions。

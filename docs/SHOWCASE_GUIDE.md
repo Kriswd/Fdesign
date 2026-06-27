@@ -59,6 +59,7 @@ PSD / PSB / PNG / JPEG
 ## 可以直接参考的公开演示包
 
 - [公开演示包](./demo-kit/README.md)
+- [净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)
 - [示例 CSV](./demo-kit/sample-products.csv)
 - [字段映射示例](./demo-kit/field-map.example.json)
 - [图片清单](./demo-kit/image-manifest.json)
