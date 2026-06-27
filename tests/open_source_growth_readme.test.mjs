@@ -159,6 +159,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/ROADMAP.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.equal(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/PROMOTION_KIT_CN.md'), false);
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/CONTRIBUTING_CN.md'));
