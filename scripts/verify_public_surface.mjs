@@ -28,6 +28,7 @@ export const PUBLIC_SURFACE_FILES = [
   'docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md',
   'docs/showcases/README.md',
   'docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md',
+  'docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md',
   'docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md',
   'scripts/setup_github_growth.ps1',
 ];
