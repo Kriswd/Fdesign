@@ -45,6 +45,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/robots.txt',
     'docs/sitemap.xml',
     'docs/START_HERE_CN.md',
+    'docs/USE_CASES_CN.md',
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-social-card.png',
     'docs/assets/fdesign-workflow-demo.gif',
@@ -80,6 +81,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const demoKit = readText('docs/demo-kit/README.md');
   const llms = readText('docs/llms.txt');
   const startHere = readText('docs/START_HERE_CN.md');
+  const useCases = readText('docs/USE_CASES_CN.md');
   const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
   const troubleshooting = readText('docs/TROUBLESHOOTING_CN.md');
@@ -92,11 +94,18 @@ test('公开演示文档与社区素材应齐备', () => {
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
   assert.ok(llms.includes('Fdesign is an open-source Photoshop + Excel PSD automation workbench'));
   assert.ok(llms.includes('Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
+  assert.ok(llms.includes('Use cases CN: https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
   assert.ok(llms.includes('Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(llms.includes('Demo kit: https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(llms.includes('Use GitHub Issues or Discussions with sanitized examples only'));
   assert.ok(startHere.includes('Fdesign 中文上手入口'));
+  assert.ok(startHere.includes('[Fdesign 中文适用场景](./USE_CASES_CN.md)'));
   assert.ok(startHere.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(useCases.includes('Fdesign 中文适用场景'));
+  assert.ok(useCases.includes('电商主图多款号、多色号批量导出'));
+  assert.ok(useCases.includes('[多画板详情页批量导出](./showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md)'));
+  assert.ok(useCases.includes('[中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)'));
+  assert.ok(useCases.includes('不要提交私有 PSD、真实商品图、账号信息、token、后台截图或未净化字段'));
   assert.ok(startHere.includes('[公开演示包](./demo-kit/README.md)'));
   assert.ok(startHere.includes('[图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例)'));
   assert.ok(startHere.includes('https://github.com/Kriswd/Fdesign/issues/15'));
@@ -182,6 +191,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(demo.includes('![闪图 Fdesign 工作流演示](./assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[中文上手入口](./docs/START_HERE_CN.md)'));
+  assert.ok(readme.includes('[中文适用场景](./docs/USE_CASES_CN.md)'));
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
@@ -211,6 +221,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/showcases'));
@@ -229,6 +240,8 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.equal(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/PROMOTION_KIT_CN.md'), false);
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/CONTRIBUTING_CN.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));
+  assert.ok(page.includes('先判断是不是你的 PSD 场景'));
+  assert.ok(page.includes('判断适用场景'));
   assert.ok(page.includes('公开净化案例库'));
   assert.equal(page.includes('./DEMO.html'), false);
   assert.ok(page.includes('og:image'));
@@ -251,6 +264,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(robots.includes('Sitemap: https://kriswd.github.io/Fdesign/sitemap.xml'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/</loc>'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/llms.txt</loc>'));
+  assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/USE_CASES_CN.md</loc>'));
   assert.ok(sitemap.includes('<lastmod>2026-06-28</lastmod>'));
   assert.ok(roadmap.includes('Tracked Contribution Tasks'));
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/13'));

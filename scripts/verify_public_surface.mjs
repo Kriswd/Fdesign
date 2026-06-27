@@ -17,6 +17,7 @@ export const PUBLIC_SURFACE_FILES = [
   'docs/index.html',
   'docs/llms.txt',
   'docs/START_HERE_CN.md',
+  'docs/USE_CASES_CN.md',
   'docs/DEMO.md',
   'docs/FAQ.md',
   'docs/QUICKSTART_CN.md',

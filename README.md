@@ -23,6 +23,7 @@ V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 中文试跑讨论：<https://github.com/Kriswd/Fdesign/discussions/8>
 
 第一次从社区或朋友转发进来，可以先看 [Fdesign 中文上手入口](./docs/START_HERE_CN.md)，再决定是看演示、试跑、读案例还是提交反馈。
+如果你还不确定自己的流程是否适合，可以先读 [Fdesign 中文适用场景](./docs/USE_CASES_CN.md)。
 
 ## 产品截图
 
@@ -44,6 +45,8 @@ V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 - 电商运营：把 Excel 商品数据变成可复用的图像生产任务。
 - 自动化开发者：参考 React + Node.js + Photoshop JSX/VBS 的本地自动化链路。
 - 小团队与工作室：在本机保留 PSD、素材和导出结果，不依赖云端图片生产服务。
+
+更细的场景判断、暂时不适合的流程和反馈描述模板见 [Fdesign 中文适用场景](./docs/USE_CASES_CN.md)。
 
 ## 能力概览
 
@@ -83,6 +86,7 @@ npm run dev
 
 - [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)
 - [中文上手入口](./docs/START_HERE_CN.md)
+- [中文适用场景](./docs/USE_CASES_CN.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)
 - [Demo walkthrough](./docs/DEMO.md)
@@ -145,6 +149,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [架构说明](./docs/ARCHITECTURE.md)
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
 - [中文上手入口](./docs/START_HERE_CN.md)
+- [中文适用场景](./docs/USE_CASES_CN.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [公开净化案例库](./docs/showcases/README.md)
