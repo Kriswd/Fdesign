@@ -318,6 +318,9 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(setupScript.includes('issues/new?template=quickstart_feedback.yml'));
   assert.ok(setupScript.includes('workflow-fit'));
   assert.ok(setupScript.includes('issues/new?template=workflow_fit.yml'));
+  assert.ok(setupScript.includes('Test-IssueExistsByLabel'));
+  assert.ok(setupScript.includes("-UniqueLabel 'workflow-fit'"));
+  assert.ok(setupScript.includes("-UniqueLabel 'quickstart-feedback'"));
   assert.ok(setupScript.includes('gh issue create'));
 
   const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');

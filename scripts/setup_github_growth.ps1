@@ -39,12 +39,29 @@ function Test-IssueExists {
   return (@($titles | Where-Object { $_ -eq $Title }).Count -gt 0)
 }
 
+function Test-IssueExistsByLabel {
+  param([string]$Label)
+
+  $query = [System.Uri]::EscapeDataString("repo:$Repo is:issue label:$Label")
+  $numbers = & gh api "search/issues?q=$query&per_page=1" --jq '.items[].number'
+  if ($LASTEXITCODE -ne 0) {
+    throw "gh issue label search failed for: $Label"
+  }
+  return -not [string]::IsNullOrWhiteSpace($numbers)
+}
+
 function Ensure-Issue {
   param(
     [string]$Title,
     [string]$Body,
-    [string[]]$Labels
+    [string[]]$Labels,
+    [string]$UniqueLabel = ''
   )
+
+  if (-not [string]::IsNullOrWhiteSpace($UniqueLabel) -and (Test-IssueExistsByLabel -Label $UniqueLabel)) {
+    Write-Host "Issue exists for label: $UniqueLabel"
+    return
+  }
 
   if (Test-IssueExists -Title $Title) {
     Write-Host "Issue exists: $Title"
@@ -192,11 +209,11 @@ Please do not upload private PSD files, real product images, credentials, tokens
 https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml
 '@
 
-Ensure-Issue -Title 'Roadmap: V3.0 ecommerce PSD automation workflow' -Body $roadmapBody -Labels @('roadmap', 'help wanted')
-Ensure-Issue -Title 'Showcase request: share sanitized ecommerce PSD workflows' -Body $showcaseBody -Labels @('showcase', 'help wanted')
+Ensure-Issue -Title 'Roadmap: V3.0 ecommerce PSD automation workflow' -Body $roadmapBody -Labels @('roadmap', 'help wanted') -UniqueLabel 'roadmap'
+Ensure-Issue -Title 'Showcase request: share sanitized ecommerce PSD workflows' -Body $showcaseBody -Labels @('showcase', 'help wanted') -UniqueLabel 'showcase'
 Ensure-Issue -Title 'Good first issue: improve quick start from a fresh Windows run' -Body $docsBody -Labels @('good first issue', 'documentation')
-Ensure-Issue -Title 'Launch feedback: README, demo, and first-run clarity' -Body $feedbackBody -Labels @('launch-feedback', 'documentation')
-Ensure-Issue -Title 'Quickstart CN feedback: Windows + Photoshop 首次启动' -Body $quickstartCnBody -Labels @('quickstart-feedback', 'documentation', 'help wanted')
-Ensure-Issue -Title 'Workflow fit: collect sanitized PSD + Excel patterns' -Body $workflowFitBody -Labels @('workflow-fit', 'documentation', 'help wanted')
+Ensure-Issue -Title 'Launch feedback: README, demo, and first-run clarity' -Body $feedbackBody -Labels @('launch-feedback', 'documentation') -UniqueLabel 'launch-feedback'
+Ensure-Issue -Title 'Quickstart CN feedback: Windows + Photoshop 首次启动' -Body $quickstartCnBody -Labels @('quickstart-feedback', 'documentation', 'help wanted') -UniqueLabel 'quickstart-feedback'
+Ensure-Issue -Title 'Workflow fit: collect sanitized PSD + Excel patterns' -Body $workflowFitBody -Labels @('workflow-fit', 'documentation', 'help wanted') -UniqueLabel 'workflow-fit'
 
 Write-Host "GitHub growth setup completed for $Repo"
