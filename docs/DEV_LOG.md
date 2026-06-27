@@ -250,3 +250,4 @@
 [2026-06-28] Task: 补齐国内用户公开排障路径 | Changes: 新增 `docs/TROUBLESHOOTING_CN.md`，覆盖 npm install、后端健康检查、前端启动、公开演示包理解、图片匹配和 Photoshop 导出失败排查；README、FAQ、中文快速试跑、GitHub Pages 和开源检查清单增加排障入口。 | Risk: Low. 仅新增公开支持文档和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 补齐最小 PSD 模板试跑教程 | Changes: 新增 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`，指导用户用公开演示 CSV、字段映射和示例图在 Photoshop 中创建最小 PSD 测试模板；README、Demo、FAQ、中文快速试跑、排障清单、GitHub Pages 与开源检查清单增加入口。 | Risk: Low. 仅新增公开教程和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 给最小 PSD 教程补可视化关系图 | Changes: 新增 `docs/demo-kit/assets/minimal-psd-binding-flow.svg`，在最小 PSD 教程中展示 Photoshop 图层名、Fdesign 商品位、CSV 第一行和字段绑定关系；demo-kit README 增加资产说明，便于国内用户先看懂再试跑。 | Risk: Low. 仅新增公开 SVG 教程资产和文档引用，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
+[2026-06-28] Task: 给最小 PSD 教程补跑通后界面截图 | Changes: 在 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md` 中复用公开工作台截图，补充“跑通后你应该看到什么”说明；开源检查清单和增长测试同步锁定截图入口，降低首批国内用户看到空态后的理解成本。 | Risk: Low. 仅新增公开文档引用和测试断言，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
