@@ -16,6 +16,7 @@
 - 已新增 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`，用于指导用户用公开演示数据从零制作最小 PSD 测试模板。
 - 最小 PSD 教程已嵌入公开安全的绑定关系图和主工作流截图，避免首批用户只看到空态说明。
 - 已新增 `docs/showcases/README.md` 与 `docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md`，作为公开净化案例库和第一个电商详情页案例。
+- 已新增 `docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md`，用于承接同款多色主图批量导出的常见场景。
 - 已新增 `docs/TROUBLESHOOTING_CN.md`，用于承接国内用户首次启动、端口、图片匹配和 Photoshop 导出排障。
 - 已新增 `docs/SHOWCASE_GUIDE.md`，用于指导用户提交公开安全的净化模板案例和最小复现。
 - 已新增 GitHub Pages 项目页 `https://kriswd.github.io/Fdesign/`，用于社群和社媒传播落地。

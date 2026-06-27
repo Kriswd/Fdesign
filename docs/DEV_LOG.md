@@ -254,3 +254,4 @@
 [2026-06-28] Task: 新增公开净化案例承接国内首批用户 | Changes: 新增 `docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md`，用公开截图和 demo-kit 假数据说明眼镜商品详情页批量套版场景；README、Demo、净化案例指南、Pages、开源检查清单和增长测试增加入口。 | Risk: Low. 仅新增公开案例文档和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 新增公开净化案例库索引 | Changes: 新增 `docs/showcases/README.md`，把眼镜详情页案例整理成案例库入口，并列出后续适合补充的公开安全案例类型；README、Demo、净化案例指南、Pages、开源检查清单和增长测试同步指向案例库。 | Risk: Low. 仅新增公开案例索引和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 固化公开面净化校验 | Changes: 新增 `scripts/verify_public_surface.mjs` 与 `npm run verify:public-surface`，覆盖 README、GitHub Pages、公开文档、GitHub 模板和增长设置脚本，防止内部发布材料或具体私有数据类别误入公开面；同步更新 README、开源检查清单和测试。 | Risk: Low. 仅新增发布前校验与公开文档说明，不改变应用运行、PSD 导出、后台 API 或发布包逻辑。
+[2026-06-28] Task: 新增主图多色号公开净化案例 | Changes: 新增 `docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md`，复用公开 demo-kit 假数据说明同一主图 PSD 模板下的多款号、多色号字段绑定、图片匹配、输出命名和常见错误；README、Demo、Pages、案例库索引、开源检查清单和增长测试同步增加入口。 | Risk: Low. 仅新增公开案例文档和静态链接，不改变应用运行、PSD 导出、后台 API 或发布包逻辑。
