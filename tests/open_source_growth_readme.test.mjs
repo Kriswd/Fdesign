@@ -91,6 +91,10 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(showcaseGuide.includes('不要提交什么'));
   assert.ok(showcaseGuide.includes('Template showcase issue'));
 
+  const releaseNotes = readText('docs/github/release-v3.0.0.md');
+  assert.ok(releaseNotes.includes('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
+  assert.ok(releaseNotes.includes('docs/TROUBLESHOOTING_CN.md'));
+
   const readme = readText('README.md');
   const launchDir = ['.', 'docs', 'launch'].join('/');
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));

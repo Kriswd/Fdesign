@@ -12,6 +12,8 @@ Fdesign V3.0 is the first public open-source release focused on ecommerce PSD pr
 
 - Value-led README and public demo materials.
 - Real workbench screenshot showing canvas preview, product-slot binding, Excel data console, and export entry.
+- Chinese minimal PSD template walkthrough for first-time users who need a safe local test template.
+- Chinese troubleshooting checklist for npm install, local ports, health checks, image matching, and Photoshop export failures.
 - Local workflow for binding Excel fields and product images to PSD variables.
 - Batch export path for PSD, PSB, PNG, and JPEG.
 - Public issue templates, roadmap, demo kit, and contribution paths.
@@ -35,6 +37,12 @@ npm run dev
 
 - Frontend: `http://127.0.0.1:3010/`
 - Backend health check: `http://127.0.0.1:3001/health`
+
+Domestic first-run path:
+
+- Chinese quick start: `docs/QUICKSTART_CN.md`
+- Minimal PSD walkthrough: `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`
+- Troubleshooting checklist: `docs/TROUBLESHOOTING_CN.md`
 
 ## Known limitations
 
