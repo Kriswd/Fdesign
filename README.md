@@ -16,6 +16,10 @@ Turns Excel product data into batch PSD deliverables through a local Photoshop a
 
 项目页：<https://kriswd.github.io/Fdesign/>
 
+V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
+
+中文试跑讨论：<https://github.com/Kriswd/Fdesign/discussions/8>
+
 ## 产品截图
 
 ![闪图 Fdesign 工作台](./public/screenshots/fdesign-workbench-showcase.png)
@@ -73,6 +77,8 @@ npm run dev
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
+- [V3.0 Release](https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0)
+- [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8)
 - [FAQ](./docs/FAQ.md)
 - [Roadmap](./docs/ROADMAP.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
@@ -86,7 +92,7 @@ npm run dev
 - 文档、截图、快速开始和故障排查改进。
 - 面向新手的 issue、示例数据和模板说明。
 
-国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先在 Discussions 里描述你的工作流。
+国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
 
 ## 服务入口
 
