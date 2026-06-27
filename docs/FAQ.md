@@ -11,12 +11,14 @@ Fdesign 是一个本地 Photoshop 自动化工作台，用来把 Excel 商品数
 建议按这个顺序：
 
 1. 先看 README 首屏和项目页，确认是否符合你的场景。
-2. 按 [中文快速试跑](./QUICKSTART_CN.md) 确认 Node.js、前后端端口、后端健康检查和本机 Photoshop。
-3. 打开 [Demo walkthrough](./DEMO.md)，理解主工作流。
-4. 打开 [公开演示包](./demo-kit/README.md)，查看 `sample-products.csv`、`field-map.example.json` 和 `image-manifest.json`。
-5. 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 做一个本机测试模板，先跑一条记录。
-6. 如果启动、端口、图片匹配或 Photoshop 导出卡住，按 [中文排障清单](./TROUBLESHOOTING_CN.md) 逐项定位。
-7. 最小模板跑通后，再把同样的绑定方法迁移到真实 PSD 模板。
+2. 如果想先看界面流转，可以看 [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)。
+3. 如果想判断是否符合自己的 PSD 批量作图场景，可以看 [公开净化案例库](./showcases/README.md) 和 [眼镜商品详情页批量套版案例](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)。
+4. 按 [中文快速试跑](./QUICKSTART_CN.md) 确认 Node.js、前后端端口、后端健康检查和本机 Photoshop。
+5. 打开 [Demo walkthrough](./DEMO.md)，理解主工作流。
+6. 打开 [公开演示包](./demo-kit/README.md)，查看 `sample-products.csv`、`field-map.example.json` 和 `image-manifest.json`。
+7. 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 做一个本机测试模板，先跑一条记录。
+8. 如果启动、端口、图片匹配或 Photoshop 导出卡住，按 [中文排障清单](./TROUBLESHOOTING_CN.md) 逐项定位。
+9. 最小模板跑通后，再把同样的绑定方法迁移到真实 PSD 模板。
 
 ## 运行需要什么？
 

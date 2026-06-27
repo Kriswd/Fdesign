@@ -95,6 +95,9 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(troubleshooting.includes('不要公开私有 PSD、账号信息、敏感业务资料'));
   assert.ok(faq.includes('Windows 10/11 x64'));
   assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(faq.includes('[B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)'));
+  assert.ok(faq.includes('[公开净化案例库](./showcases/README.md)'));
+  assert.ok(faq.includes('[眼镜商品详情页批量套版案例](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(faq.includes('[中文排障清单](./TROUBLESHOOTING_CN.md)'));
   assert.ok(faq.includes('field-map.example.json'));
   assert.ok(showcaseGuide.includes('Fdesign 净化案例提交指南'));
