@@ -124,6 +124,6 @@
   <g transform="translate(72 620)">
     <rect x="0" y="0" width="1056" height="38" rx="12" fill="#0f1d30" stroke="rgba(255,255,255,0.12)"/>
     <circle cx="24" cy="19" r="6" fill="#2dd4bf"/>
-    <text x="44" y="25" fill="#dbeafe" font-size="17">公开反馈只提交变量名、字段名、最短复现和错误摘要；不要提交私有 PSD、真实商品图、客户数据、订单或报价。</text>
+    <text x="44" y="25" fill="#dbeafe" font-size="17">公开反馈只提交变量名、字段名、最短复现和错误摘要；不要提交私有 PSD、真实商品图或敏感业务资料。</text>
   </g>
 </svg>

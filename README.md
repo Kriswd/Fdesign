@@ -82,6 +82,7 @@ npm run dev
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
 - [最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)
+- [公开净化案例库](./docs/showcases/README.md)
 - [净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)
 - [净化案例提交指南](./docs/SHOWCASE_GUIDE.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
@@ -100,7 +101,7 @@ npm run dev
 - 文档、截图、快速开始和故障排查改进。
 - 面向新手的 issue、示例数据和模板说明。
 
-提交真实模板/工作流案例前，请先按 [净化案例提交指南](./docs/SHOWCASE_GUIDE.md) 处理字段、截图和素材，避免公开私有 PSD、客户数据、订单、报价或授权不清的图片。
+提交真实模板/工作流案例前，请先按 [净化案例提交指南](./docs/SHOWCASE_GUIDE.md) 处理字段、截图和素材，避免公开私有 PSD、敏感业务资料或授权不清的图片。
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
 提交前建议先过一遍 [中文排障清单](./docs/TROUBLESHOOTING_CN.md)，这样反馈里能直接带上最短复现步骤和净化后的错误摘要。
@@ -132,6 +133,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
+- [公开净化案例库](./docs/showcases/README.md)
 - [净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)
 - [FAQ](./docs/FAQ.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)

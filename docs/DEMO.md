@@ -10,7 +10,7 @@
 
 ## 公开净化案例
 
-如果你想先看一个更接近电商详情页生产的公开场景，可以阅读 [净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)。这个案例使用公开截图和 `docs/demo-kit/` 里的假数据，说明字段、图片变量、商品位和导出格式如何组合。
+如果你想先看更接近电商生产的公开场景，可以从 [公开净化案例库](./showcases/README.md) 开始。当前已有 [眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)，使用公开截图和 `docs/demo-kit/` 里的假数据，说明字段、图片变量、商品位和导出格式如何组合。
 
 ## 1. 导入 PSD 模板
 
@@ -37,6 +37,7 @@
 - 按 README 的快速开始在本地启动项目。
 - 下载或查看 [公开演示包](./demo-kit/README.md)，用净化后的示例数据理解字段映射方式。
 - 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 先跑通一条记录，再迁移到真实模板。
+- 浏览 [公开净化案例库](./showcases/README.md)，查看后续新增的公开安全案例。
 - 阅读 [净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)，理解一个完整电商场景如何拆成字段、图片变量和导出结果。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
 - 分享你的模板案例或问题到 GitHub Issues / Discussions。

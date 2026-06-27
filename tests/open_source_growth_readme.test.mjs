@@ -48,6 +48,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/QUICKSTART_CN.md',
     'docs/TROUBLESHOOTING_CN.md',
     'docs/SHOWCASE_GUIDE.md',
+    'docs/showcases/README.md',
     'docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md',
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
@@ -70,6 +71,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const troubleshooting = readText('docs/TROUBLESHOOTING_CN.md');
   const faq = readText('docs/FAQ.md');
   const showcaseGuide = readText('docs/SHOWCASE_GUIDE.md');
+  const showcaseIndex = readText('docs/showcases/README.md');
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
@@ -86,19 +88,23 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(quickstart.includes('npm config set registry https://registry.npmmirror.com'));
   assert.ok(quickstart.includes('[最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
   assert.ok(quickstart.includes('http://127.0.0.1:3001/health'));
-  assert.ok(quickstart.includes('不包含真实商品图、客户数据、账号信息、订单信息或私有 PSD'));
+  assert.ok(quickstart.includes('不包含真实商品图、账号信息、敏感业务资料或私有 PSD'));
   assert.ok(troubleshooting.includes('Fdesign 中文排障清单'));
   assert.ok(troubleshooting.includes('npm config set registry https://registry.npmmirror.com'));
   assert.ok(troubleshooting.includes('Photoshop 导出失败'));
-  assert.ok(troubleshooting.includes('不要公开私有 PSD、客户资料、订单、报价'));
+  assert.ok(troubleshooting.includes('不要公开私有 PSD、账号信息、敏感业务资料'));
   assert.ok(faq.includes('Windows 10/11 x64'));
   assert.ok(faq.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(faq.includes('[中文排障清单](./TROUBLESHOOTING_CN.md)'));
   assert.ok(faq.includes('field-map.example.json'));
   assert.ok(showcaseGuide.includes('Fdesign 净化案例提交指南'));
   assert.ok(showcaseGuide.includes('不要提交什么'));
+  assert.ok(showcaseGuide.includes('[公开净化案例库](./showcases/README.md)'));
   assert.ok(showcaseGuide.includes('[净化案例：眼镜商品详情页批量套版](./showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(showcaseGuide.includes('Template showcase issue'));
+  assert.ok(showcaseIndex.includes('Fdesign 公开净化案例库'));
+  assert.ok(showcaseIndex.includes('[眼镜商品详情页批量套版](./EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
+  assert.ok(showcaseIndex.includes('后续最值得补的案例'));
   assert.ok(eyewearShowcase.includes('净化案例：眼镜商品详情页批量套版'));
   assert.ok(eyewearShowcase.includes('../../public/screenshots/fdesign-workbench-showcase.png'));
   assert.ok(eyewearShowcase.includes('sample-products.csv'));
@@ -114,6 +120,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
+  assert.ok(readme.includes('[公开净化案例库](./docs/showcases/README.md)'));
   assert.ok(readme.includes('[净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
@@ -133,13 +140,14 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/showcases'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));
-  assert.ok(page.includes('公开净化案例：眼镜商品详情页批量套版'));
+  assert.ok(page.includes('公开净化案例库'));
   assert.equal(page.includes('./DEMO.html'), false);
   assert.ok(page.includes('og:image'));
   assert.ok(page.includes('https://kriswd.github.io/Fdesign/assets/fdesign-social-card.png'));
@@ -201,7 +209,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(quickstartTemplate.includes('中文快速试跑反馈'));
   assert.ok(quickstartTemplate.includes('quickstart-feedback'));
   assert.ok(quickstartTemplate.includes('127.0.0.1:3001/health'));
-  assert.ok(quickstartTemplate.includes('真实 PSD 模板、真实商品图、客户数据、订单信息'));
+  assert.ok(quickstartTemplate.includes('真实 PSD 模板、真实商品图、账号信息、token、后台截图或任何敏感业务资料'));
   assert.ok(showcaseTemplate.includes('SHOWCASE_GUIDE.md'));
   assert.ok(showcaseTemplate.includes('Public safety check'));
   assert.ok(showcaseTemplate.includes('PSD variables'));

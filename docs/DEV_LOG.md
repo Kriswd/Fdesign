@@ -252,3 +252,4 @@
 [2026-06-28] Task: 给最小 PSD 教程补可视化关系图 | Changes: 新增 `docs/demo-kit/assets/minimal-psd-binding-flow.svg`，在最小 PSD 教程中展示 Photoshop 图层名、Fdesign 商品位、CSV 第一行和字段绑定关系；demo-kit README 增加资产说明，便于国内用户先看懂再试跑。 | Risk: Low. 仅新增公开 SVG 教程资产和文档引用，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 给最小 PSD 教程补跑通后界面截图 | Changes: 在 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md` 中复用公开工作台截图，补充“跑通后你应该看到什么”说明；开源检查清单和增长测试同步锁定截图入口，降低首批国内用户看到空态后的理解成本。 | Risk: Low. 仅新增公开文档引用和测试断言，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
 [2026-06-28] Task: 新增公开净化案例承接国内首批用户 | Changes: 新增 `docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md`，用公开截图和 demo-kit 假数据说明眼镜商品详情页批量套版场景；README、Demo、净化案例指南、Pages、开源检查清单和增长测试增加入口。 | Risk: Low. 仅新增公开案例文档和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
+[2026-06-28] Task: 新增公开净化案例库索引 | Changes: 新增 `docs/showcases/README.md`，把眼镜详情页案例整理成案例库入口，并列出后续适合补充的公开安全案例类型；README、Demo、净化案例指南、Pages、开源检查清单和增长测试同步指向案例库。 | Risk: Low. 仅新增公开案例索引和静态链接，不改变应用运行、PSD 导出、后台 API、发布包或仓库设置。
