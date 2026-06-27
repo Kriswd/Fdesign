@@ -81,6 +81,7 @@ npm run dev
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [Demo walkthrough](./docs/DEMO.md)
 - [公开演示包](./docs/demo-kit/README.md)
+- [最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)
 - [净化案例提交指南](./docs/SHOWCASE_GUIDE.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [V3.0 Release](https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0)

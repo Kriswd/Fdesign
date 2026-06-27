@@ -83,6 +83,7 @@ http://127.0.0.1:3010/
 第一次不要急着上传真实模板。建议先打开：
 
 - [公开演示包](./demo-kit/README.md)
+- [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)
 - [示例 CSV](./demo-kit/sample-products.csv)
 - [字段映射示例](./demo-kit/field-map.example.json)
 - [图片清单](./demo-kit/image-manifest.json)
@@ -97,7 +98,7 @@ Excel 列 -> PSD 文本变量 / 图片变量 -> 导出命名
 
 ## 6. 用简化 PSD 跑一条记录
 
-基础服务启动后，建议自己做一个很小的 PSD 测试模板：
+基础服务启动后，建议先按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 做一个很小的 PSD 测试模板：
 
 - 一个文本变量，例如款号。
 - 一个文本变量，例如色号。

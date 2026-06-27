@@ -50,6 +50,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/SHOWCASE_GUIDE.md',
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
+    'docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md',
     'docs/demo-kit/sample-products.csv',
     'docs/demo-kit/field-map.example.json',
     'docs/demo-kit/image-manifest.json',
@@ -61,6 +62,7 @@ test('公开演示文档与社区素材应齐备', () => {
   });
 
   const demoKit = readText('docs/demo-kit/README.md');
+  const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
   const troubleshooting = readText('docs/TROUBLESHOOTING_CN.md');
   const faq = readText('docs/FAQ.md');
@@ -68,7 +70,13 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
+  assert.ok(demoKit.includes('[最小 PSD 模板制作教程](./MINIMAL_PSD_TEMPLATE_CN.md)'));
+  assert.ok(minimalPsdGuide.includes('最小 PSD 模板制作教程'));
+  assert.ok(minimalPsdGuide.includes('hero_image'));
+  assert.ok(minimalPsdGuide.includes('sample-products.csv'));
+  assert.ok(minimalPsdGuide.includes('不要把这个文件提交到公开仓库'));
   assert.ok(quickstart.includes('npm config set registry https://registry.npmmirror.com'));
+  assert.ok(quickstart.includes('[最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
   assert.ok(quickstart.includes('http://127.0.0.1:3001/health'));
   assert.ok(quickstart.includes('不包含真实商品图、客户数据、账号信息、订单信息或私有 PSD'));
   assert.ok(troubleshooting.includes('Fdesign 中文排障清单'));
@@ -87,6 +95,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const launchDir = ['.', 'docs', 'launch'].join('/');
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
+  assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
   assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
@@ -104,6 +113,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/DEMO.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
@@ -125,7 +135,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   const sitemap = readText('docs/sitemap.xml');
   assert.ok(robots.includes('Sitemap: https://kriswd.github.io/Fdesign/sitemap.xml'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/</loc>'));
-  assert.ok(sitemap.includes('<lastmod>2026-06-27</lastmod>'));
+  assert.ok(sitemap.includes('<lastmod>2026-06-28</lastmod>'));
 });
 
 test('GitHub 社区入口与设置脚本应可重复执行', () => {

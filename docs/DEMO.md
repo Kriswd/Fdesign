@@ -32,5 +32,6 @@
 - 先看 [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)，快速理解画布、绑定区和数据控制台如何配合。
 - 按 README 的快速开始在本地启动项目。
 - 下载或查看 [公开演示包](./demo-kit/README.md)，用净化后的示例数据理解字段映射方式。
+- 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 先跑通一条记录，再迁移到真实模板。
 - 阅读 [PSD 自动填充手册](./USER_MANUAL_PSD_AUTOFILL.md)。
 - 分享你的模板案例或问题到 GitHub Issues / Discussions。

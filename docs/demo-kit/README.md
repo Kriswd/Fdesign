@@ -10,11 +10,12 @@
 - `field-map.example.json`：示例字段映射，展示 Excel 列如何绑定到 PSD 文本变量和图片变量。
 - `image-manifest.json`：示例图片清单，说明每张图对应的商品、色号、角度和本地路径。
 - `images/*.svg`：可公开托管的简化眼镜示意图，仅用于演示变量替换流程。
+- `MINIMAL_PSD_TEMPLATE_CN.md`：从零创建一个最小 PSD 模板的中文教程，用于第一次试跑字段绑定。
 
 ## 建议用法
 
 1. 按 README 启动前端和后端。
-2. 准备自己的 PSD 模板，或根据 `field-map.example.json` 在模板中创建同名变量。
+2. 按 [最小 PSD 模板制作教程](./MINIMAL_PSD_TEMPLATE_CN.md) 准备一个只含少量变量的测试 PSD，或根据 `field-map.example.json` 在模板中创建同名变量。
 3. 导入 `sample-products.csv`，再把 `images/` 里的 SVG 示例图绑定到图片变量。
 4. 先导出单条记录验证字段，再批量导出完整数据。
 

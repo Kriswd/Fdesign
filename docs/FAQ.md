@@ -14,8 +14,9 @@ Fdesign 是一个本地 Photoshop 自动化工作台，用来把 Excel 商品数
 2. 按 [中文快速试跑](./QUICKSTART_CN.md) 确认 Node.js、前后端端口、后端健康检查和本机 Photoshop。
 3. 打开 [Demo walkthrough](./DEMO.md)，理解主工作流。
 4. 打开 [公开演示包](./demo-kit/README.md)，查看 `sample-products.csv`、`field-map.example.json` 和 `image-manifest.json`。
-5. 如果启动、端口、图片匹配或 Photoshop 导出卡住，按 [中文排障清单](./TROUBLESHOOTING_CN.md) 逐项定位。
-6. 本地启动后，先用自己的简化 PSD 模板试一条记录，再批量跑完整数据。
+5. 按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) 做一个本机测试模板，先跑一条记录。
+6. 如果启动、端口、图片匹配或 Photoshop 导出卡住，按 [中文排障清单](./TROUBLESHOOTING_CN.md) 逐项定位。
+7. 最小模板跑通后，再把同样的绑定方法迁移到真实 PSD 模板。
 
 ## 运行需要什么？
 
@@ -31,7 +32,7 @@ Fdesign 是一个本地 Photoshop 自动化工作台，用来把 Excel 商品数
 
 ## 为什么没有直接附带 PSD 模板？
 
-PSD 模板通常涉及字体、图片素材和授权边界。为了让开源仓库保持干净，公开仓库只提供净化演示数据和 SVG 示例图。你可以根据 `docs/demo-kit/field-map.example.json` 自己创建一个简化 PSD 模板来试跑字段绑定。
+PSD 模板通常涉及字体、图片素材和授权边界。为了让开源仓库保持干净，公开仓库只提供净化演示数据和 SVG 示例图。你可以按 [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)，根据 `docs/demo-kit/field-map.example.json` 自己创建一个简化 PSD 模板来试跑字段绑定。
 
 ## Excel 字段怎么绑定到 PSD 变量？
 
