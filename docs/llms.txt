@@ -1,0 +1,42 @@
+# 闪图 Fdesign V3.0
+
+Fdesign is an open-source Photoshop + Excel PSD automation workbench for ecommerce image production.
+
+闪图 Fdesign 是一个开源的本机 PSD 批量作图工作台，面向电商设计师、运营和自动化开发者。它把 Excel 商品数据、商品图和 PSD 模板变量绑定起来，再通过本机 Adobe Photoshop 批量导出 PSD、PSB、PNG 和 JPEG 成品。
+
+## Best Starting Points
+
+- Project page: https://kriswd.github.io/Fdesign/
+- GitHub repository: https://github.com/Kriswd/Fdesign
+- Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md
+- Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md
+- Demo kit: https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit
+- Showcase index: https://github.com/Kriswd/Fdesign/tree/main/docs/showcases
+- Troubleshooting CN: https://github.com/Kriswd/Fdesign/blob/main/docs/TROUBLESHOOTING_CN.md
+- FAQ: https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md
+- Bilibili demo: https://www.bilibili.com/video/BV1YDTA6nEeN/
+
+## What It Does
+
+- Imports PSD templates and identifies replaceable text, image and artboard variables.
+- Binds Excel columns, image manifests and PSD variables into repeatable production tasks.
+- Runs locally on Windows with Adobe Photoshop, without uploading private assets to a cloud image service.
+- Exports PSD, PSB, PNG and JPEG files for product images, detail pages and multi-artboard templates.
+- Provides public demo data, sanitized showcases and troubleshooting examples for first-time trial users.
+
+## Good Fit
+
+- Ecommerce designers reducing repeated PSD edits.
+- Ecommerce operators turning spreadsheet rows into repeatable image production tasks.
+- Automation developers studying a React + Node.js + Photoshop JSX/VBS local workflow.
+- Small teams that need local-first PSD automation and clear public feedback paths.
+
+## Requirements
+
+- Windows 10/11 x64.
+- Node.js 18+.
+- Adobe Photoshop installed locally and callable by scripts.
+
+## Feedback
+
+Use GitHub Issues or Discussions with sanitized examples only. Do not upload private PSD templates, real product images, account information, tokens, backend screenshots or unredacted fields.

@@ -41,6 +41,7 @@ test('README 应把店铺入口保持为次级服务入口', () => {
 test('公开演示文档与社区素材应齐备', () => {
   [
     'docs/index.html',
+    'docs/llms.txt',
     'docs/robots.txt',
     'docs/sitemap.xml',
     'docs/START_HERE_CN.md',
@@ -77,6 +78,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(workflowGif.length < 900_000);
 
   const demoKit = readText('docs/demo-kit/README.md');
+  const llms = readText('docs/llms.txt');
   const startHere = readText('docs/START_HERE_CN.md');
   const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
@@ -88,6 +90,11 @@ test('公开演示文档与社区素材应齐备', () => {
   const mainImageShowcase = readText('docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md');
   const multiArtboardShowcase = readText('docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md');
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
+  assert.ok(llms.includes('Fdesign is an open-source Photoshop + Excel PSD automation workbench'));
+  assert.ok(llms.includes('Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
+  assert.ok(llms.includes('Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
+  assert.ok(llms.includes('Demo kit: https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
+  assert.ok(llms.includes('Use GitHub Issues or Discussions with sanitized examples only'));
   assert.ok(startHere.includes('Fdesign 中文上手入口'));
   assert.ok(startHere.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
   assert.ok(startHere.includes('[公开演示包](./demo-kit/README.md)'));
@@ -227,6 +234,9 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('og:image'));
   assert.ok(page.includes('https://kriswd.github.io/Fdesign/assets/fdesign-social-card.png'));
   assert.ok(page.includes('<link rel="canonical" href="https://kriswd.github.io/Fdesign/">'));
+  assert.ok(page.includes('https://kriswd.github.io/Fdesign/llms.txt'));
+  assert.ok(page.includes('og:image:alt'));
+  assert.ok(page.includes('twitter:image:alt'));
   assert.ok(page.includes('name="keywords"'));
   assert.ok(page.includes('PSD批量生成'));
   assert.ok(page.includes('application/ld+json'));
@@ -240,6 +250,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   const roadmap = readText('docs/ROADMAP.md');
   assert.ok(robots.includes('Sitemap: https://kriswd.github.io/Fdesign/sitemap.xml'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/</loc>'));
+  assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/llms.txt</loc>'));
   assert.ok(sitemap.includes('<lastmod>2026-06-28</lastmod>'));
   assert.ok(roadmap.includes('Tracked Contribution Tasks'));
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/13'));

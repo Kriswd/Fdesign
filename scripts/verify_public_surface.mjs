@@ -15,6 +15,7 @@ export const PUBLIC_SURFACE_FILES = [
   '.github/ISSUE_TEMPLATE/template_showcase.yml',
   '.github/ISSUE_TEMPLATE/config.yml',
   'docs/index.html',
+  'docs/llms.txt',
   'docs/START_HERE_CN.md',
   'docs/DEMO.md',
   'docs/FAQ.md',
