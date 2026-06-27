@@ -6,13 +6,13 @@ Fdesign is an open-source project for Photoshop, Excel, and ecommerce image-prod
 
 - Be respectful and constructive when discussing bugs, templates, export failures, and workflow differences.
 - Share the smallest reproducible example you can.
-- Remove private PSD assets, real product images, customer data, tokens, shop credentials, and sensitive business details before posting.
+- Remove private PSD assets, real product images, credentials, tokens, backstage screenshots, and sensitive business material before posting.
 - Assume good intent, but be precise about observed behavior and verification evidence.
 
 ## Unacceptable Behavior
 
 - Harassment, personal attacks, hate speech, or repeated hostile comments.
-- Posting private customer, commercial, credential, or copyrighted material without permission.
+- Posting private, credentialed, copyrighted, or sensitive business material without permission.
 - Using issues or discussions primarily for advertising, spam, scraping, or unrelated support requests.
 - Encouraging fake stars, paid engagement, review manipulation, or misleading promotion.
 

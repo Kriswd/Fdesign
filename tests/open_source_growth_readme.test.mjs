@@ -49,6 +49,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/TROUBLESHOOTING_CN.md',
     'docs/SHOWCASE_GUIDE.md',
     'docs/PROMOTION_KIT_CN.md',
+    'docs/CONTRIBUTING_CN.md',
     'docs/showcases/README.md',
     'docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md',
     'docs/FAQ.md',
@@ -73,6 +74,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const faq = readText('docs/FAQ.md');
   const showcaseGuide = readText('docs/SHOWCASE_GUIDE.md');
   const promotionKit = readText('docs/PROMOTION_KIT_CN.md');
+  const contributingCn = readText('docs/CONTRIBUTING_CN.md');
   const showcaseIndex = readText('docs/showcases/README.md');
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
   assert.ok(demoKit.includes('净化演示包'));
@@ -112,6 +114,11 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(promotionKit.includes('https://kriswd.github.io/Fdesign/'));
   assert.ok(promotionKit.includes('docs/assets/fdesign-social-card.png'));
   assert.ok(promotionKit.includes('不上传私有 PSD、真实商品图、账号信息、token、后台截图或敏感业务资料'));
+  assert.ok(contributingCn.includes('Fdesign 中文贡献指南'));
+  assert.ok(contributingCn.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(contributingCn.includes('[中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)'));
+  assert.ok(contributingCn.includes('不要在 issue、discussion、PR 或截图中提交这些内容'));
+  assert.ok(contributingCn.includes('敏感业务资料'));
   assert.ok(showcaseIndex.includes('Fdesign 公开净化案例库'));
   assert.ok(showcaseIndex.includes('[眼镜商品详情页批量套版](./EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(showcaseIndex.includes('后续最值得补的案例'));
@@ -133,6 +140,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(readme.includes('[公开净化案例库](./docs/showcases/README.md)'));
   assert.ok(readme.includes('[净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)'));
   assert.ok(readme.includes('[公开分享包](./docs/PROMOTION_KIT_CN.md)'));
+  assert.ok(readme.includes('[Fdesign 中文贡献指南](./docs/CONTRIBUTING_CN.md)'));
   assert.ok(readme.includes('[中文排障清单](./docs/TROUBLESHOOTING_CN.md)'));
   assert.ok(readme.includes('[净化案例提交指南](./docs/SHOWCASE_GUIDE.md)'));
   assert.ok(readme.includes('[FAQ](./docs/FAQ.md)'));
@@ -158,6 +166,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/SHOWCASE_GUIDE.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/FAQ.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/PROMOTION_KIT_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/CONTRIBUTING_CN.md'));
   assert.ok(page.includes('先用公开演示包看懂字段绑定'));
   assert.ok(page.includes('公开净化案例库'));
   assert.equal(page.includes('./DEMO.html'), false);
@@ -200,6 +209,7 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(conduct.includes('fake stars'));
   assert.ok(prTemplate.includes('Public Data Check'));
   assert.ok(prTemplate.includes('No private PSD templates'));
+  assert.ok(prTemplate.includes('sensitive business material'));
 
   const setupScript = readText('scripts/setup_github_growth.ps1');
   assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));
@@ -225,6 +235,32 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(showcaseTemplate.includes('SHOWCASE_GUIDE.md'));
   assert.ok(showcaseTemplate.includes('Public safety check'));
   assert.ok(showcaseTemplate.includes('PSD variables'));
+  assert.ok(showcaseTemplate.includes('sensitive business material'));
   assert.ok(showAndTell.includes('Sanitization guide'));
   assert.ok(showAndTell.includes('## PSD variables'));
+});
+
+test('公开协作入口不应使用具体敏感业务类别措辞', () => {
+  const publicTexts = [
+    'README.md',
+    'CONTRIBUTING.md',
+    'CODE_OF_CONDUCT.md',
+    '.github/ISSUE_TEMPLATE/template_showcase.yml',
+    '.github/ISSUE_TEMPLATE/quickstart_feedback.yml',
+    'docs/CONTRIBUTING_CN.md',
+    'docs/PROMOTION_KIT_CN.md',
+    'docs/SHOWCASE_GUIDE.md',
+    'docs/TROUBLESHOOTING_CN.md',
+    'docs/QUICKSTART_CN.md',
+  ].map((relPath) => `${relPath}\n${readText(relPath)}`).join('\n---\n');
+
+  [
+    ['customer', ' data'].join(''),
+    ['or', 'ders'].join(''),
+    ['quo', 'tes'].join(''),
+    ['con', 'tracts'].join(''),
+    ['commercial', ' material'].join(''),
+  ].forEach((phrase) => {
+    assert.equal(publicTexts.toLowerCase().includes(phrase), false, `${phrase} should not appear`);
+  });
 });

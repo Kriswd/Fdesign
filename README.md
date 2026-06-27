@@ -106,6 +106,7 @@ npm run dev
 
 国内用户按中文快速试跑遇到问题，可以直接提交 [中文试跑反馈](https://github.com/Kriswd/Fdesign/issues/new?template=quickstart_feedback.yml)。开始前建议先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。如果不确定该提 Issue 还是 Discussion，可以先到 [中文试跑讨论](https://github.com/Kriswd/Fdesign/discussions/8) 描述你的工作流。
 提交前建议先过一遍 [中文排障清单](./docs/TROUBLESHOOTING_CN.md)，这样反馈里能直接带上最短复现步骤和净化后的错误摘要。
+想提交问题、案例或 PR 的中文用户，可以直接看 [Fdesign 中文贡献指南](./docs/CONTRIBUTING_CN.md)。
 
 ## 服务入口
 
@@ -137,6 +138,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 - [公开净化案例库](./docs/showcases/README.md)
 - [净化案例：眼镜商品详情页批量套版](./docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md)
 - [公开分享包](./docs/PROMOTION_KIT_CN.md)
+- [中文贡献指南](./docs/CONTRIBUTING_CN.md)
 - [FAQ](./docs/FAQ.md)
 - [PSD 自动填充手册](./docs/USER_MANUAL_PSD_AUTOFILL.md)
 - [开源检查清单](./docs/OPEN_SOURCE_CHECKLIST.md)
