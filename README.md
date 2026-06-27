@@ -22,6 +22,8 @@ V3.0 Release：<https://github.com/Kriswd/Fdesign/releases/tag/v3.0.0>
 
 中文试跑讨论：<https://github.com/Kriswd/Fdesign/discussions/8>
 
+第一次从社区或朋友转发进来，可以先看 [Fdesign 中文上手入口](./docs/START_HERE_CN.md)，再决定是看演示、试跑、读案例还是提交反馈。
+
 ## 产品截图
 
 ![闪图 Fdesign 工作流演示](./docs/assets/fdesign-workflow-demo.gif)
@@ -80,6 +82,7 @@ npm run dev
 ## 完整演示
 
 - [B站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/)
+- [中文上手入口](./docs/START_HERE_CN.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)
 - [Demo walkthrough](./docs/DEMO.md)
@@ -141,6 +144,7 @@ VITE_SHOP_LINK_LABEL=选购服务
 
 - [架构说明](./docs/ARCHITECTURE.md)
 - [API 开发指南](./docs/API_DEV_GUIDE.md)
+- [中文上手入口](./docs/START_HERE_CN.md)
 - [中文快速试跑](./docs/QUICKSTART_CN.md)
 - [中文排障清单](./docs/TROUBLESHOOTING_CN.md)
 - [公开净化案例库](./docs/showcases/README.md)

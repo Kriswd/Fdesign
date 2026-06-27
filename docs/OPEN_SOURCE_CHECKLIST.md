@@ -13,6 +13,7 @@
 - 公开分支会使用净化后的历史发布，避免旧资料随可见性切换一并暴露。
 - README 首屏已改为“Excel 商品数据 -> 批量 PSD 成品”的结果导向定位。
 - 已新增 Demo、公开演示包、Roadmap、Release Notes 与 GitHub Issue/Discussion 模板。
+- 已新增 `docs/START_HERE_CN.md`，用于承接国内社区、文章和朋友转发过来的首次访问者，按演示、试跑、案例和反馈分流。
 - 已新增 `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`，用于指导用户用公开演示数据从零制作最小 PSD 测试模板。
 - 最小 PSD 教程已嵌入公开安全的绑定关系图和主工作流截图，避免首批用户只看到空态说明。
 - 已新增 `docs/assets/fdesign-workflow-demo.gif`，并嵌入 README、GitHub Pages 与 Demo 文档，用公开截图讲清 PSD 模板预览、图片变量替换、Excel 字段绑定和批量导出路径。

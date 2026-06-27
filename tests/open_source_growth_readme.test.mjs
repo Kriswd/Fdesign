@@ -43,6 +43,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/index.html',
     'docs/robots.txt',
     'docs/sitemap.xml',
+    'docs/START_HERE_CN.md',
     'docs/assets/fdesign-logo.svg',
     'docs/assets/fdesign-social-card.png',
     'docs/assets/fdesign-workflow-demo.gif',
@@ -76,6 +77,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(workflowGif.length < 900_000);
 
   const demoKit = readText('docs/demo-kit/README.md');
+  const startHere = readText('docs/START_HERE_CN.md');
   const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
   const troubleshooting = readText('docs/TROUBLESHOOTING_CN.md');
@@ -86,6 +88,11 @@ test('公开演示文档与社区素材应齐备', () => {
   const mainImageShowcase = readText('docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md');
   const multiArtboardShowcase = readText('docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md');
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
+  assert.ok(startHere.includes('Fdesign 中文上手入口'));
+  assert.ok(startHere.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(startHere.includes('[公开演示包](./demo-kit/README.md)'));
+  assert.ok(startHere.includes('[图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例)'));
+  assert.ok(startHere.includes('https://github.com/Kriswd/Fdesign/issues/15'));
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
@@ -167,6 +174,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const launchDir = ['.', 'docs', 'launch'].join('/');
   assert.ok(demo.includes('![闪图 Fdesign 工作流演示](./assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)'));
+  assert.ok(readme.includes('[中文上手入口](./docs/START_HERE_CN.md)'));
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
   assert.ok(readme.includes('[公开演示包](./docs/demo-kit/README.md)'));
   assert.ok(readme.includes('[最小 PSD 模板制作教程](./docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md)'));
@@ -195,6 +203,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('./assets/fdesign-workflow-demo.gif'));
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/showcases'));
