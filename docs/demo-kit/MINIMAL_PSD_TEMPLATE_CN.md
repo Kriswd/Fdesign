@@ -4,6 +4,10 @@
 
 建议先用这份最小模板跑通一条记录，再把同样的绑定方法迁移到真实电商模板里。
 
+![最小 PSD 模板绑定关系图](./assets/minimal-psd-binding-flow.svg)
+
+上图只使用公开演示字段，表达的是最短链路：Photoshop 图层名保持为 `title`、`sku`、`color_no`、`subtitle`、`hero_image`，再在 Fdesign 里绑定到同名 CSV 字段。
+
 ## 需要准备
 
 - Windows 10/11
@@ -13,6 +17,7 @@
   - `sample-products.csv`
   - `field-map.example.json`
   - `images/FDX1001-C10-front.svg`
+  - `assets/minimal-psd-binding-flow.svg`
 
 ## 1. 新建一个 PSD
 
@@ -155,4 +160,3 @@ FDX1001-C10
 - 真实商品图。
 - 客户数据、订单、报价、账号、token。
 - 店铺后台截图或授权不清的图片素材。
-

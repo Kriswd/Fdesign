@@ -51,6 +51,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/FAQ.md',
     'docs/demo-kit/README.md',
     'docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md',
+    'docs/demo-kit/assets/minimal-psd-binding-flow.svg',
     'docs/demo-kit/sample-products.csv',
     'docs/demo-kit/field-map.example.json',
     'docs/demo-kit/image-manifest.json',
@@ -71,7 +72,9 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
   assert.ok(demoKit.includes('[最小 PSD 模板制作教程](./MINIMAL_PSD_TEMPLATE_CN.md)'));
+  assert.ok(demoKit.includes('assets/minimal-psd-binding-flow.svg'));
   assert.ok(minimalPsdGuide.includes('最小 PSD 模板制作教程'));
+  assert.ok(minimalPsdGuide.includes('![最小 PSD 模板绑定关系图](./assets/minimal-psd-binding-flow.svg)'));
   assert.ok(minimalPsdGuide.includes('hero_image'));
   assert.ok(minimalPsdGuide.includes('sample-products.csv'));
   assert.ok(minimalPsdGuide.includes('不要把这个文件提交到公开仓库'));

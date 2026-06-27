@@ -11,6 +11,7 @@
 - `image-manifest.json`：示例图片清单，说明每张图对应的商品、色号、角度和本地路径。
 - `images/*.svg`：可公开托管的简化眼镜示意图，仅用于演示变量替换流程。
 - `MINIMAL_PSD_TEMPLATE_CN.md`：从零创建一个最小 PSD 模板的中文教程，用于第一次试跑字段绑定。
+- `assets/minimal-psd-binding-flow.svg`：公开安全的绑定关系图，用于说明图层名、商品位和 CSV 字段如何对应。
 
 ## 建议用法
 
