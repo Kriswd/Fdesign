@@ -45,6 +45,7 @@ test('公开演示文档与社区素材应齐备', () => {
     'docs/robots.txt',
     'docs/sitemap.xml',
     'docs/START_HERE_CN.md',
+    'docs/CHINA_ACCESS_CN.md',
     'docs/USE_CASES_CN.md',
     '.github/ISSUE_TEMPLATE/workflow_fit.yml',
     'docs/assets/fdesign-logo.svg',
@@ -82,6 +83,7 @@ test('公开演示文档与社区素材应齐备', () => {
   const demoKit = readText('docs/demo-kit/README.md');
   const llms = readText('docs/llms.txt');
   const startHere = readText('docs/START_HERE_CN.md');
+  const chinaAccess = readText('docs/CHINA_ACCESS_CN.md');
   const useCases = readText('docs/USE_CASES_CN.md');
   const minimalPsdGuide = readText('docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md');
   const quickstart = readText('docs/QUICKSTART_CN.md');
@@ -95,12 +97,14 @@ test('公开演示文档与社区素材应齐备', () => {
   const eyewearShowcase = readText('docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md');
   assert.ok(llms.includes('Fdesign is an open-source Photoshop + Excel PSD automation workbench'));
   assert.ok(llms.includes('Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
+  assert.ok(llms.includes('China access and first-run friction guide: https://github.com/Kriswd/Fdesign/blob/main/docs/CHINA_ACCESS_CN.md'));
   assert.ok(llms.includes('Use cases CN: https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
   assert.ok(llms.includes('Workflow fit feedback: https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml'));
   assert.ok(llms.includes('Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
   assert.ok(llms.includes('Demo kit: https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(llms.includes('Use GitHub Issues or Discussions with sanitized examples only'));
   assert.ok(startHere.includes('Fdesign 中文上手入口'));
+  assert.ok(startHere.includes('[国内访问与试跑减阻](./CHINA_ACCESS_CN.md)'));
   assert.ok(startHere.includes('[Fdesign 中文适用场景](./USE_CASES_CN.md)'));
   assert.ok(startHere.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(startHere.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
@@ -113,6 +117,14 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(startHere.includes('[公开演示包](./demo-kit/README.md)'));
   assert.ok(startHere.includes('[图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例)'));
   assert.ok(startHere.includes('https://github.com/Kriswd/Fdesign/issues/15'));
+  assert.ok(chinaAccess.includes('Fdesign 国内访问与试跑减阻'));
+  assert.ok(chinaAccess.includes('npm config set registry https://registry.npmmirror.com'));
+  assert.ok(chinaAccess.includes('https://registry.npmjs.org'));
+  assert.ok(chinaAccess.includes('http://127.0.0.1:3001/health'));
+  assert.ok(chinaAccess.includes('http://127.0.0.1:3010/'));
+  assert.ok(chinaAccess.includes('[中文快速试跑](./QUICKSTART_CN.md)'));
+  assert.ok(chinaAccess.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
+  assert.ok(chinaAccess.includes('不要上传私有 PSD、真实商品图、账号信息、token、后台截图或未净化字段'));
   assert.ok(demoKit.includes('净化演示包'));
   assert.ok(demoKit.includes('synthetic demo data'));
   assert.ok(demoKit.includes('不包含私有模板、真实商品素材或运行产物'));
@@ -197,6 +209,7 @@ test('公开演示文档与社区素材应齐备', () => {
   assert.ok(demo.includes('![闪图 Fdesign 工作流演示](./assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[工作流 GIF 演示](./docs/assets/fdesign-workflow-demo.gif)'));
   assert.ok(readme.includes('[中文上手入口](./docs/START_HERE_CN.md)'));
+  assert.ok(readme.includes('[国内访问与试跑减阻](./docs/CHINA_ACCESS_CN.md)'));
   assert.ok(readme.includes('[中文适用场景](./docs/USE_CASES_CN.md)'));
   assert.ok(readme.includes('[PSD 工作流适配反馈](https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml)'));
   assert.ok(readme.includes('[中文快速试跑](./docs/QUICKSTART_CN.md)'));
@@ -228,6 +241,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(page.includes('./assets/fdesign-workbench-showcase.png'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/tree/main/docs/demo-kit'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md'));
+  assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/CHINA_ACCESS_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml'));
   assert.ok(page.includes('https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md'));
@@ -273,6 +287,7 @@ test('GitHub Pages 项目页应提供可传播的 Star 转化入口', () => {
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/</loc>'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/llms.txt</loc>'));
   assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/USE_CASES_CN.md</loc>'));
+  assert.ok(sitemap.includes('<loc>https://kriswd.github.io/Fdesign/CHINA_ACCESS_CN.md</loc>'));
   assert.ok(sitemap.includes('<lastmod>2026-06-28</lastmod>'));
   assert.ok(roadmap.includes('Tracked Contribution Tasks'));
   assert.ok(roadmap.includes('https://github.com/Kriswd/Fdesign/issues/13'));
@@ -292,7 +307,6 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
     '.github/DISCUSSION_TEMPLATE/show-and-tell.md',
     '.github/PULL_REQUEST_TEMPLATE.md',
     'CODE_OF_CONDUCT.md',
-    'scripts/setup_github_growth.ps1',
   ].forEach((relPath) => {
     assert.equal(fileExists(relPath), true, `${relPath} should exist`);
   });
@@ -304,25 +318,6 @@ test('GitHub 社区入口与设置脚本应可重复执行', () => {
   assert.ok(prTemplate.includes('Public Data Check'));
   assert.ok(prTemplate.includes('No private PSD templates'));
   assert.ok(prTemplate.includes('unredacted private workflow details'));
-
-  const setupScript = readText('scripts/setup_github_growth.ps1');
-  assert.ok(setupScript.includes('gh repo edit Kriswd/Fdesign'));
-  assert.ok(setupScript.includes('https://kriswd.github.io/Fdesign/'));
-  assert.ok(setupScript.includes('source[path]=/docs'));
-  assert.ok(setupScript.includes('$pagesExitCode'));
-  assert.ok(setupScript.includes('--enable-discussions'));
-  assert.ok(setupScript.includes('photoshop-automation'));
-  assert.ok(setupScript.includes('search/issues?q='));
-  assert.ok(setupScript.includes('good first issue'));
-  assert.ok(setupScript.includes('quickstart-feedback'));
-  assert.ok(setupScript.includes('Quickstart CN feedback: Windows + Photoshop'));
-  assert.ok(setupScript.includes('issues/new?template=quickstart_feedback.yml'));
-  assert.ok(setupScript.includes('workflow-fit'));
-  assert.ok(setupScript.includes('issues/new?template=workflow_fit.yml'));
-  assert.ok(setupScript.includes('Test-IssueExistsByLabel'));
-  assert.ok(setupScript.includes("-UniqueLabel 'workflow-fit'"));
-  assert.ok(setupScript.includes("-UniqueLabel 'quickstart-feedback'"));
-  assert.ok(setupScript.includes('gh issue create'));
 
   const quickstartTemplate = readText('.github/ISSUE_TEMPLATE/quickstart_feedback.yml');
   const workflowFitTemplate = readText('.github/ISSUE_TEMPLATE/workflow_fit.yml');

@@ -9,6 +9,7 @@ Fdesign is an open-source Photoshop + Excel PSD automation workbench for ecommer
 - Project page: https://kriswd.github.io/Fdesign/
 - GitHub repository: https://github.com/Kriswd/Fdesign
 - Chinese start-here guide: https://github.com/Kriswd/Fdesign/blob/main/docs/START_HERE_CN.md
+- China access and first-run friction guide: https://github.com/Kriswd/Fdesign/blob/main/docs/CHINA_ACCESS_CN.md
 - Use cases CN: https://github.com/Kriswd/Fdesign/blob/main/docs/USE_CASES_CN.md
 - Workflow fit feedback: https://github.com/Kriswd/Fdesign/issues/new?template=workflow_fit.yml
 - Quickstart CN: https://github.com/Kriswd/Fdesign/blob/main/docs/QUICKSTART_CN.md
@@ -25,6 +26,7 @@ Fdesign is an open-source Photoshop + Excel PSD automation workbench for ecommer
 - Runs locally on Windows with Adobe Photoshop, without uploading private assets to a cloud image service.
 - Exports PSD, PSB, PNG and JPEG files for product images, detail pages and multi-artboard templates.
 - Provides public demo data, sanitized showcases and troubleshooting examples for first-time trial users.
+- Provides a China access and first-run friction guide for GitHub download, npm registry, local ports and Photoshop readiness.
 - Helps users judge whether their workflow fits main-image variants, multi-artboard detail pages, field-composition templates or local Photoshop automation.
 
 ## Good Fit

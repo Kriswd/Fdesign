@@ -108,16 +108,13 @@ test('公开仓库应保留协作入口并移除风险资料', () => {
   });
 });
 
-test('开源说明应包含 V3.0 启动地址与待办清单', () => {
+test('开源说明应包含 V3.0 启动地址', () => {
   const readme = readText('README.md');
-  const checklist = readText('docs/OPEN_SOURCE_CHECKLIST.md');
   const changelog = readText('CHANGELOG_V3.0.md');
 
   assert.ok(readme.includes('闪图 Fdesign V3.0'));
   assert.ok(readme.includes('http://127.0.0.1:3010/'));
   assert.ok(readme.includes('http://127.0.0.1:3001/health'));
-  assert.ok(checklist.includes('开源前必须确认'));
-  assert.ok(checklist.includes('LICENSE'));
   assert.ok(changelog.includes('闪图 Fdesign V3.0'));
 });
 

@@ -40,6 +40,7 @@ npm run dev
 
 Domestic first-run path:
 
+- China access and first-run friction guide: `docs/CHINA_ACCESS_CN.md`
 - Chinese quick start: `docs/QUICKSTART_CN.md`
 - Minimal PSD walkthrough: `docs/demo-kit/MINIMAL_PSD_TEMPLATE_CN.md`
 - Troubleshooting checklist: `docs/TROUBLESHOOTING_CN.md`

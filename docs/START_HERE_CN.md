@@ -21,10 +21,11 @@ Fdesign 适合这类工作：
 | 你想做什么 | 入口 |
 | --- | --- |
 | 先看界面和流程 | [B 站演示视频](https://www.bilibili.com/video/BV1YDTA6nEeN/) / [工作流 GIF](./assets/fdesign-workflow-demo.gif) |
+| GitHub 或 npm 访问慢 | [国内访问与试跑减阻](./CHINA_ACCESS_CN.md) |
 | 先本地跑起来 | [中文快速试跑](./QUICKSTART_CN.md) |
 | 先理解字段绑定 | [公开演示包](./demo-kit/README.md) / [最小 PSD 模板制作教程](./demo-kit/MINIMAL_PSD_TEMPLATE_CN.md) |
 
-建议顺序是：先看 GIF 或视频，再看公开演示包，最后按中文快速试跑启动项目。
+建议顺序是：先看 GIF 或视频，再看公开演示包，最后按中文快速试跑启动项目。如果你还没跑到项目本身，只是卡在 GitHub 下载、npm 安装或端口启动，先看国内访问与试跑减阻。
 
 ## 3. 想看完整场景
 
@@ -41,6 +42,7 @@ Fdesign 适合这类工作：
 
 | 卡点 | 入口 |
 | --- | --- |
+| GitHub 下载慢、npm 安装慢、不知道是否要先 clone | [国内访问与试跑减阻](./CHINA_ACCESS_CN.md) |
 | npm、端口、后端健康检查、前端打不开 | [中文排障清单](./TROUBLESHOOTING_CN.md) |
 | 图片未绑定、角度图错位、图层变量不识别 | [图片匹配和图层命名净化样例](./TROUBLESHOOTING_CN.md#51-图片匹配和图层命名净化样例) |
 | `IDAT: incorrect data check`、Photoshop 静默吞任务、批量中途失败 | [Photoshop 导出失败净化样例](./TROUBLESHOOTING_CN.md#7-photoshop-导出失败净化样例) |

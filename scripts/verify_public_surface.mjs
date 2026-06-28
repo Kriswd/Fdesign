@@ -18,6 +18,7 @@ export const PUBLIC_SURFACE_FILES = [
   'docs/index.html',
   'docs/llms.txt',
   'docs/START_HERE_CN.md',
+  'docs/CHINA_ACCESS_CN.md',
   'docs/USE_CASES_CN.md',
   'docs/DEMO.md',
   'docs/FAQ.md',
@@ -25,7 +26,6 @@ export const PUBLIC_SURFACE_FILES = [
   'docs/TROUBLESHOOTING_CN.md',
   'docs/SHOWCASE_GUIDE.md',
   'docs/CONTRIBUTING_CN.md',
-  'docs/OPEN_SOURCE_CHECKLIST.md',
   'docs/ROADMAP.md',
   'docs/github/release-v3.0.0.md',
   'docs/demo-kit/README.md',
@@ -34,7 +34,6 @@ export const PUBLIC_SURFACE_FILES = [
   'docs/showcases/MAIN_IMAGE_COLOR_VARIANTS_CN.md',
   'docs/showcases/MULTI_ARTBOARD_BATCH_EXPORT_CN.md',
   'docs/showcases/EYEWEAR_DETAIL_WORKFLOW_CN.md',
-  'scripts/setup_github_growth.ps1',
 ];
 
 const BANNED_PHRASES = [
@@ -61,6 +60,10 @@ const INTERNAL_PUBLIC_PATHS = [
   'docs/PROMOTION_KIT_CN.md',
   'docs/launch',
   'docs/superpowers',
+  'docs/OPEN_SOURCE_CHECKLIST.md',
+  'docs/DEV_LOG.md',
+  'scripts/setup_github_growth.ps1',
+  'scripts/capture_github_growth_metrics.ps1',
 ];
 
 function readText(filePath) {
